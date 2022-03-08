@@ -1,0 +1,30 @@
+{
+  "home": {
+    "presentation": {
+      "title": {
+        "weHelp": "AYUDAMOS A LAS",
+        "brandsTo": "MARCAS A",
+        "thrive": "PROSPERAR",
+        "inTheDigitalAge": "EN LA ERA DIGITAL"
+      },
+      "ourWork": "Nuestro trabajo"
+    },
+    "body": {
+      "howCanWe": "¿Cómo podemos",
+      "helpYou": "ayudarte?",
+      "paragraph1": {
+        "line1": "Ayudamos a impulsar la presencia digital de marcas",
+        "line2": "y empresas a través del diseño y desarrollo web,",
+        "line3": "derivando un crecimiento en sus negocios."
+      },
+      "paragraph2": {
+        "line1": "Buscamos ser siempre disruptivos, e ir en contra de",
+        "line2": "aquellos que temen al cambio. Nuestra pasión por el",
+        "line3": "diseño y nuestras habilidades para programar,",
+        "line4": "combinadas con tu visión garantizará grandes",
+        "line5": "resultados."
+      },
+      "services": "Servicios"
+    }
+  }
+}
