@@ -6,10 +6,26 @@
 
 :root {
   --navbar-height: 95px;
+  --font1: #1b212c;
+  --font1Dark: #ffffff;
+  --font2: #a58861;
+  --font2Dark: #ffd6ae;
+  --background: #ffffff;
+  --backgroundDark: #1b212c;
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  @apply text-[color:var(--font1)] dark:text-[color:var(--font1Dark)];
+}
+
+body {
+  @apply bg-white dark:bg-[color:var(--backgroundDark)];
+}
+
+@layer components {
+  .secondaryColor {
+    @apply text-[color:var(--font2)] dark:text-[color:var(--font2Dark)];
+  }
 }
 
 .poppins-font {
