@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
 import DropDownMenu from '../DropDownMenu';
+import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
 
 export const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const logoPath = '/assets/logo.svg';
-  const menuIconPath = '/assets/menu-icon.svg';
 
   const handleHome = () => {
     navigate('/', {
@@ -23,21 +23,12 @@ export const Navbar = () => {
     <>
       <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
         {/* Left side */}
-        <div className="flex">
-          <div className="md:hidden">
-            <DropDownMenu />
-          </div>
-
-          <div className="hidden md:flex">
-            <ul className="flex items-center space-x-4 font-medium">
-              <li>ES</li>
-              <li className="text-[#a58861]">EN</li>
-            </ul>
-          </div>
+        <div className="flex w-[200px]">
+          <DropDownMenu />
         </div>
 
         {/* Middle side */}
-        <div className="flex-grow flex justify-center items-center h-[14px] cursor-pointer my-auto">
+        <div className="flex flex-grow justify-center items-center h-[14px] cursor-pointer my-auto">
           <img
             alt="khutz-icon"
             src={logoPath}
@@ -47,8 +38,15 @@ export const Navbar = () => {
         </div>
 
         {/* Right side */}
-        <div className="hidden md:flex">
-          <img src={menuIconPath} alt="" className="" onClick={toggleMenu} />
+        <div className="hidden md:flex md:justify-end w-[200px]">
+          {menuOpen ? (
+            <XIcon className="h-7 cursor-pointer" onClick={toggleMenu} />
+          ) : (
+            <MenuAlt4Icon
+              className="h-8 cursor-pointer text-right"
+              onClick={toggleMenu}
+            />
+          )}
         </div>
       </header>
       <Outlet />
