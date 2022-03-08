@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
@@ -6,6 +7,7 @@ export const Navbar = () => {
       <header className="bg-white sticky top-0 z-50 grid grid-cols-5 md:grid-cols-3 shadow-md py-4 px-8 md:px-16">
         <h1 className="text-xl">This is the navbar</h1>
       </header>
+      <Outlet />
     </>
   );
 };

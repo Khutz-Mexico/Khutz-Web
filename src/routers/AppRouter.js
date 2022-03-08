@@ -20,7 +20,7 @@ export const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="/" element={<HomeScreen />} />
+          <Route path="home" element={<HomeScreen />} />
         </Route>
 
         <Route path="/services" element={<ServicesScreen />} />
