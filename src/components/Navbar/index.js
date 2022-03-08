@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
-import DropDownMenu from '../DropDownMenu';
+// import DropDownMenu from '../DropDownMenu';
 import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
 import { MenuPopup } from '../MenuPopup';
 import { MovilPopup } from '../MovilPopup';
@@ -31,7 +31,11 @@ export const Navbar = () => {
       <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
         {/* Left side */}
         <div className="hidden md:flex w-[200px] items-center">
-          <DropDownMenu />
+          {/* <DropDownMenu /> */}
+          <ul className="flex items-center space-x-4">
+            <li className="text-[16px] font-medium">EN</li>
+            <li className="text-[16px] font-medium text-[#AAAAAA]">ES</li>
+          </ul>
         </div>
 
         {/* Middle side */}

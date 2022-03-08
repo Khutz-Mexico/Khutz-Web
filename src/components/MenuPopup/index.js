@@ -1,4 +1,4 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const MenuPopup = () => {
   return (
@@ -8,11 +8,21 @@ export const MenuPopup = () => {
       </span>
       <hr className="text-white opacity-40 mt-6" />
       <ul className="py-10">
-        <li className="menu-item">Inicio</li>
-        <li className="menu-item">Portafolio</li>
-        <li className="menu-item">Servicios</li>
-        <li className="menu-item">Cotizar</li>
-        <li className="menu-item">Contacto</li>
+        <li className="menu-item hover:text-[#AAAAAA]">
+          <NavLink to="/">Inicio</NavLink>
+        </li>
+        <li className="menu-item hover:text-[#AAAAAA]">
+          <NavLink to="/portfolio">Portafolio</NavLink>
+        </li>
+        <li className="menu-item hover:text-[#AAAAAA]">
+          <NavLink to="/services">Servicios</NavLink>
+        </li>
+        <li className="menu-item hover:text-[#AAAAAA]">
+          <NavLink to="/quote">Cotizar</NavLink>
+        </li>
+        <li className="menu-item hover:text-[#AAAAAA]">
+          <NavLink to="/contact">Contacto</NavLink>
+        </li>
       </ul>
       <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
       <ul className="flex space-x-7">

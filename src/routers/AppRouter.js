@@ -2,7 +2,10 @@ import { useEffect } from 'react';
 import { Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom';
 
 import { Navbar } from '../components/Navbar';
+import { ContactScreen } from '../pages/ContactScreen';
 import { HomeScreen } from '../pages/HomeScreen';
+import { PortfolioScreen } from '../pages/PortfolioScreen';
+import { QuoteScreen } from '../pages/QuoteScreen';
 import { ServicesScreen } from '../pages/ServicesScreen';
 
 const DefaultRoute = () => {
@@ -21,6 +24,10 @@ export const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<HomeScreen />} />
+          <Route path="portfolio" element={<PortfolioScreen />} />
+          <Route path="services" element={<ServicesScreen />} />
+          <Route path="quote" element={<QuoteScreen />} />
+          <Route path="contact" element={<ContactScreen />} />
         </Route>
 
         <Route path="/services" element={<ServicesScreen />} />
