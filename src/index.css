@@ -41,6 +41,8 @@ body {
   }
 }
 
-.custom-select {
-  position: relative;
+.menu-item {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 55px;
 }

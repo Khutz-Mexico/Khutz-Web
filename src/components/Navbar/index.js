@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
 import DropDownMenu from '../DropDownMenu';
 import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
+import { MenuPopup } from '../MenuPopup';
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -40,13 +41,18 @@ export const Navbar = () => {
         {/* Right side */}
         <div className="hidden md:flex md:justify-end w-[200px]">
           {menuOpen ? (
-            <XIcon className="h-7 cursor-pointer" onClick={toggleMenu} />
+            <XIcon
+              className="h-7 cursor-pointer z-50 fill-[#FFFFFF]"
+              onClick={toggleMenu}
+            />
           ) : (
             <MenuAlt4Icon
               className="h-8 cursor-pointer text-right"
               onClick={toggleMenu}
             />
           )}
+
+          {menuOpen && <MenuPopup onClose={() => setMenuOpen(false)} />}
         </div>
       </header>
       <Outlet />
