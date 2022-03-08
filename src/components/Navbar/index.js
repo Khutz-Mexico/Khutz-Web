@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
-import { LANGUAGE_OPTIONS } from './constants';
+import DropDownMenu from '../DropDownMenu';
 
 export const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [language, setLanguage] = useState(LANGUAGE_OPTIONS[0]);
 
   const logoPath = '/assets/logo.svg';
   const menuIconPath = '/assets/menu-icon.svg';
@@ -24,19 +23,16 @@ export const Navbar = () => {
     <>
       <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
         {/* Left side */}
-        <div className="hidden md:flex">
-          <div className="flex items-center space-x-4">
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="font-semibold text-lg select-language text-[#1B212C]"
-            >
-              {LANGUAGE_OPTIONS.map((_language) => (
-                <option key={_language} value={_language}>
-                  {_language}
-                </option>
-              ))}
-            </select>
+        <div className="flex">
+          <div className="md:hidden">
+            <DropDownMenu />
+          </div>
+
+          <div className="hidden md:flex">
+            <ul className="flex items-center space-x-4 font-medium">
+              <li>ES</li>
+              <li className="text-[#a58861]">EN</li>
+            </ul>
           </div>
         </div>
 
