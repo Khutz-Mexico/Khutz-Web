@@ -1,13 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
-export const HomeScreen = () => {
+const Presentation = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center mt-14 md:mt-[145px]">
+    <>
       <div className="flex flex-col text-3xl md:text-[70px] md:leading-[85px]">
         <p className="font-semibold text-center">
           {t('home.presentation.title.weHelp')}
@@ -32,6 +32,8 @@ export const HomeScreen = () => {
         <span>SCROLL</span>
         <ArrowNarrowDownIcon className="w-[19px]" />
       </div>
-    </div>
+    </>
   );
 };
+
+export default Presentation;
