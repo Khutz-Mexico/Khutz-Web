@@ -7,7 +7,7 @@ export default function DropDownMenu() {
     <>
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="text-[#1B212C] flex items-center text-[16px] font-semibold">
+          <Menu.Button className="text-[#1B212C] flex items-center text-lg font-medium">
             LAN
             <ChevronDownIcon
               className="w-5 h-5 ml-2 -mr-1 text-violet-200 hover:text-violet-100"
@@ -30,7 +30,7 @@ export default function DropDownMenu() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[#1B212C] text-white' : 'text-gray-900'
+                      active ? 'bg-[#a58861] text-white' : 'text-[#1B212C]'
                     } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                   >
                     Español
@@ -41,7 +41,7 @@ export default function DropDownMenu() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[#1B212C] text-white' : 'text-gray-900'
+                      active ? 'bg-[#a58861] text-white' : 'text-[#1B212C]'
                     } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                   >
                     English
