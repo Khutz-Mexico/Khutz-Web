@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
 import Button from '../components/Button';
 
 export const HomeScreen = () => {
@@ -15,6 +16,11 @@ export const HomeScreen = () => {
         <Button rightArrow solid>
           Nuestro trabajo
         </Button>
+      </div>
+      <div className="absolute flex justify-between items-center bottom-10 space-x-[35px]">
+        <ArrowNarrowDownIcon className="w-[19px]" />
+        <span>SCROLL</span>
+        <ArrowNarrowDownIcon className="w-[19px]" />
       </div>
     </div>
   );

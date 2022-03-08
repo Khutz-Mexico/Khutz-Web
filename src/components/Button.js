@@ -12,7 +12,7 @@ const Button = ({ children, rightArrow, solid, onClick }) => {
         {children}
       </div>
       {rightArrow && (
-        <ArrowRightIcon className="w-[14px] fill-[var(--fillColor)]" />
+        <ArrowRightIcon className="w-[18px] fill-[var(--fillColor)]" />
       )}
     </div>
   );
