@@ -15,3 +15,9 @@
 .poppins-font {
   font-family: 'Poppins', sans-serif;
 }
+
+@layer components {
+  .select-language {
+    @apply outline-none;
+  }
+}
