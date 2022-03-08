@@ -28,9 +28,18 @@ const Presentation = () => {
         </Button>
       </div>
       <div className="absolute flex justify-between items-center bottom-10 space-x-[35px] select-none">
-        <ArrowNarrowDownIcon className="w-[19px]" />
-        <span>SCROLL</span>
-        <ArrowNarrowDownIcon className="w-[19px]" />
+        <div className="flex items-center justify-between space-x-10">
+          <ArrowNarrowDownIcon className="arrow" />
+          <div className="space-x-2">
+            <span className="text-[12px] font-light">S</span>
+            <span className="text-[12px] font-light">C</span>
+            <span className="text-[12px] font-light">R</span>
+            <span className="text-[12px] font-light">O</span>
+            <span className="text-[12px] font-light">L</span>
+            <span className="text-[12px] font-light">L</span>
+          </div>
+          <ArrowNarrowDownIcon className="arrow" />
+        </div>
       </div>
     </>
   );

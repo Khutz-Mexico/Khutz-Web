@@ -24,7 +24,7 @@ export const Navbar = () => {
     <>
       <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
         {/* Left side */}
-        <div className="flex w-[200px]">
+        <div className="flex w-[200px] items-center">
           <DropDownMenu />
         </div>
 
