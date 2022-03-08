@@ -3,10 +3,12 @@ import { useNavigate, Outlet } from 'react-router-dom';
 import DropDownMenu from '../DropDownMenu';
 import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
 import { MenuPopup } from '../MenuPopup';
+import { MovilPopup } from '../MovilPopup';
 
 export const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuMovilOpen, setMenuMovilOpen] = useState(false);
 
   const logoPath = '/assets/logo.svg';
 
@@ -20,11 +22,15 @@ export const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const toggleMenuMovil = () => {
+    setMenuMovilOpen(!menuMovilOpen);
+  };
+
   return (
     <>
       <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
         {/* Left side */}
-        <div className="flex w-[200px] items-center">
+        <div className="hidden md:flex w-[200px] items-center">
           <DropDownMenu />
         </div>
 
@@ -53,6 +59,31 @@ export const Navbar = () => {
           )}
 
           {menuOpen && <MenuPopup onClose={() => setMenuOpen(false)} />}
+        </div>
+
+        <div className="absolute bottom-0 right-0">
+          <div
+            className={`fixed right-8 bottom-8 flex items-center justify-center md:hidden w-[55px] h-[55px] rounded-full 
+            ${menuMovilOpen ? 'bg-[#F64B29]' : 'bg-[#1B212C]'}`}
+          >
+            {menuMovilOpen ? (
+              <XIcon
+                className="fill-white h-9 cursor pointer"
+                onClick={toggleMenuMovil}
+              />
+            ) : (
+              <MenuAlt4Icon
+                className="fill-white h-9 cursor-pointer"
+                onClick={toggleMenuMovil}
+              />
+            )}
+          </div>
+
+          <div className="fixed right-0 bottom-12">
+            {menuMovilOpen && (
+              <MovilPopup onClose={() => setMenuMovilOpen(false)} />
+            )}
+          </div>
         </div>
       </header>
       <Outlet />
