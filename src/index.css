@@ -6,25 +6,28 @@
 
 :root {
   --navbar-height: 95px;
-  --font1: #1b212c;
-  --font1Dark: #ffffff;
-  --font2: #a58861;
-  --font2Dark: #ffd6ae;
-  --background: #ffffff;
-  --backgroundDark: #1b212c;
+  --fontColor1: #1b212c;
+  --fontColor1Dark: #ffffff;
+  --fontColor2: #a58861;
+  --fontColor2Dark: #ffd6ae;
+  --fillColor: #ffffff;
+  --fillColorDark: #1b212c;
 }
 
 * {
-  @apply text-[color:var(--font1)] dark:text-[color:var(--font1Dark)];
+  @apply text-[color:var(--fontColor1)] dark:text-[color:var(--fontColor1Dark)];
 }
 
 body {
-  @apply bg-white dark:bg-[color:var(--backgroundDark)];
+  @apply bg-[color:var(--fillColor)] dark:bg-[color:var(--fillColorDark)];
 }
 
 @layer components {
   .secondaryColor {
-    @apply text-[color:var(--font2)] dark:text-[color:var(--font2Dark)];
+    @apply text-[color:var(--fontColor2)] dark:text-[color:var(--fontColor2Dark)];
+  }
+  .filled {
+    @apply bg-[color:var(--fillColorDark)] dark:bg-[color:var(--fillColor)];
   }
 }
 
