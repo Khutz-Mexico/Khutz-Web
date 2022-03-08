@@ -5,7 +5,7 @@ const Button = ({ children, rightArrow, solid, onClick }) => {
     <div
       className={`flex justify-center space-x-4 items-center w-full h-[55px] ${
         solid ? 'bg-[color:var(--fillColorDark)]' : ''
-      } rounded-[28px] cursor-pointer`}
+      } rounded-[28px] cursor-pointer select-none`}
       onClick={onClick}
     >
       <div className={`${solid ? 'text-[color:var(--fillColor)]' : ''}`}>

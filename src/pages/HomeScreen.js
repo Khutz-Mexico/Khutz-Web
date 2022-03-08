@@ -17,7 +17,7 @@ export const HomeScreen = () => {
           Nuestro trabajo
         </Button>
       </div>
-      <div className="absolute flex justify-between items-center bottom-10 space-x-[35px]">
+      <div className="absolute flex justify-between items-center bottom-10 space-x-[35px] select-none">
         <ArrowNarrowDownIcon className="w-[19px]" />
         <span>SCROLL</span>
         <ArrowNarrowDownIcon className="w-[19px]" />
