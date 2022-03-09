@@ -35,9 +35,21 @@ export const MenuPopup = ({ onClose }) => {
       </ul>
       <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
       <ul className="flex space-x-7">
-        <li className="text-white">Instagram</li>
-        <li className="text-white">LinkedIn</li>
-        <li className="text-white">Dribbble</li>
+        <a
+          href="https://www.instagram.com/khutzmexico"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <li className="text-white">Instagram</li>
+        </a>
+        {/* TODO add LinkedIn link */}
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+          <li className="text-white">LinkedIn</li>
+        </a>
+        {/* TODO add Dribbble link */}
+        <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+          <li className="text-white">Dribbble</li>
+        </a>
       </ul>
     </div>
   );
