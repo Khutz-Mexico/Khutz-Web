@@ -5,6 +5,7 @@ import { Navbar } from '../components/Navbar';
 import { ContactScreen } from '../pages/ContactScreen';
 import { HomeScreen } from '../pages/HomeScreen';
 import { PortfolioScreen } from '../pages/PortfolioScreen';
+import { ProjectDetailsScreen } from '../pages/ProjectDetails';
 import { QuoteScreen } from '../pages/QuoteScreen';
 import { ServicesScreen } from '../pages/ServicesScreen';
 
@@ -28,6 +29,7 @@ export const AppRouter = () => {
           <Route path="services" element={<ServicesScreen />} />
           <Route path="quote" element={<QuoteScreen />} />
           <Route path="contact" element={<ContactScreen />} />
+          <Route path="projects/:projectId" element={<ProjectDetailsScreen />} />
         </Route>
 
         <Route path="/services" element={<ServicesScreen />} />

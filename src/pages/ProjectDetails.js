@@ -1,7 +1,13 @@
+import { useParams } from 'react-router-dom';
 import { projects } from '../data/database';
 import { LargeCard } from '../components/LargeCard';
 
-export const PortfolioScreen = () => {
+export const ProjectDetailsScreen = () => {
+  const params = useParams();
+  const project = projects[params.projectId];
+
+  console.log('project', project);
+
   return (
     <>
       <div className="relative flex flex-col justify-between h-[calc(100vh-var(--navbar-height))] w-full overflow-hidden">
