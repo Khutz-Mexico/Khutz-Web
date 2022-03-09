@@ -9,6 +9,7 @@
       },
       "ourWork": "Nuestro trabajo"
     },
+
     "body": {
       "howCanWe": "¿Cómo podemos",
       "helpYou": "ayudarte?",
@@ -41,6 +42,10 @@
           "cms": "CMS"
         }
       }
+    },
+
+    "recentWork": {
+      "title": "Trabajo reciente"
     }
   }
 }

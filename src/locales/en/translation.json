@@ -9,6 +9,7 @@
       },
       "ourWork": "Our work"
     },
+
     "body": {
       "howCanWe": "How can we",
       "helpYou": "help you?",
@@ -41,6 +42,10 @@
           "cms": "CMS"
         }
       }
+    },
+
+    "recentWork": {
+      "title": "Recent work"
     }
   }
 }

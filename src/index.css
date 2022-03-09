@@ -43,6 +43,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.screen-height {
+  @apply h-[calc(100vh-var(--navbar-height))];
+}
+
 @layer components {
   .select-language {
     @apply outline-none;
