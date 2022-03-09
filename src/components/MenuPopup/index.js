@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useClickOutside from '../../hooks/useClickOutside';
+import { LINKS } from './constants';
 
 export const MenuPopup = ({ onClose }) => {
   const { t } = useTranslation();
@@ -19,31 +20,22 @@ export const MenuPopup = ({ onClose }) => {
       </span>
       <hr className="text-white opacity-40 mt-6" />
       <ul className="py-10">
-        <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink onClick={onClose} to="/">
-            {t('menuPopUp.sections.home')}
-          </NavLink>
-        </li>
-        <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink onClick={onClose} to="/portfolio">
-            {t('menuPopUp.sections.portfolio')}
-          </NavLink>
-        </li>
-        <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink onClick={onClose} to="/services">
-            {t('menuPopUp.sections.services')}
-          </NavLink>
-        </li>
-        <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink onClick={onClose} to="/quote">
-            {t('menuPopUp.sections.quote')}
-          </NavLink>
-        </li>
-        <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink onClick={onClose} to="/contact">
-            {t('menuPopUp.sections.contact')}
-          </NavLink>
-        </li>
+        {LINKS.map((link) => {
+          const isSelected = link.path === location.pathname;
+          console.log('isSelected', link.path, location.pathname, isSelected);
+          return (
+            <li
+              key={link.path}
+              className={`menu-item hover:text-[#AAAAAA] ${
+                isSelected ? 'menu-item-selected' : ''
+              }`}
+            >
+              <NavLink onClick={onClose} to={link.path}>
+                {t(link.translationKey)}
+              </NavLink>
+            </li>
+          );
+        })}
       </ul>
       <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
       <ul className="flex space-x-7">

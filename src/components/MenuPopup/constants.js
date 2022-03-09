@@ -1,45 +1,22 @@
-export const LINKS_EN = [
+export const LINKS = [
   {
-    name: 'Home',
+    translationKey: 'menuPopUp.sections.home',
     path: '/',
   },
   {
-    name: 'Portfolio',
+    translationKey: 'menuPopUp.sections.portfolio',
     path: '/portfolio',
   },
   {
-    name: 'Services',
+    translationKey: 'menuPopUp.sections.services',
     path: '/services',
   },
   {
-    name: 'Quote',
+    translationKey: 'menuPopUp.sections.quote',
     path: '/quote',
   },
   {
-    name: 'Contact',
-    path: '/contact',
-  },
-];
-
-export const LINKS_ES = [
-  {
-    name: 'Inicio',
-    path: '/',
-  },
-  {
-    name: 'Portafolio',
-    path: '/portfolio',
-  },
-  {
-    name: 'Servicios',
-    path: '/services',
-  },
-  {
-    name: 'Cotizar',
-    path: '/quote',
-  },
-  {
-    name: 'Contacto',
+    translationKey: 'menuPopUp.sections.contact',
     path: '/contact',
   },
 ];
