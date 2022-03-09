@@ -18,19 +18,29 @@ export const MenuPopup = ({ onClose }) => {
       <hr className="text-white opacity-40 mt-6" />
       <ul className="py-10">
         <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink to="/">Inicio</NavLink>
+          <NavLink onClick={onClose} to="/">
+            Inicio
+          </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink to="/portfolio">Portafolio</NavLink>
+          <NavLink onClick={onClose} to="/portfolio">
+            Portafolio
+          </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink to="/services">Servicios</NavLink>
+          <NavLink onClick={onClose} to="/services">
+            Servicios
+          </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink to="/quote">Cotizar</NavLink>
+          <NavLink onClick={onClose} to="/quote">
+            Cotizar
+          </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
-          <NavLink to="/contact">Contacto</NavLink>
+          <NavLink onClick={onClose} to="/contact">
+            Contacto
+          </NavLink>
         </li>
       </ul>
       <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
