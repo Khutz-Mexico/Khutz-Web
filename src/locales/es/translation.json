@@ -24,7 +24,23 @@
         "line4": "combinadas con tu visión garantizará grandes",
         "line5": "resultados."
       },
-      "services": "Servicios"
+      "services": "Servicios",
+      "servicesSection": {
+        "design": {
+          "title": "DISEÑO",
+          "uxUiDesign": "Diseño UX/UI",
+          "prototyping": "Prototipado",
+          "branding": "Branding",
+          "illustration": "Ilustración"
+        },
+        "development": {
+          "title": "DESARROLLO",
+          "webDevelopment": "Desarrollo web",
+          "apps": "APPs",
+          "crmAndErp": "CRM & ERP",
+          "cms": "CMS"
+        }
+      }
     }
   }
 }

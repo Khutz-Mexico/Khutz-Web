@@ -24,7 +24,23 @@
         "line4": "combined with your vision will guarantee amazing",
         "line5": "results."
       },
-      "services": "Services"
+      "services": "Services",
+      "servicesSection": {
+        "design": {
+          "title": "DESIGN",
+          "uxUiDesign": "UX/UI Design",
+          "prototyping": "Prototyping",
+          "branding": "Branding",
+          "illustration": "Illustration"
+        },
+        "development": {
+          "title": "DEVELOPMENT",
+          "webDevelopment": "Web development",
+          "apps": "APPs",
+          "crmAndErp": "CRM & ERP",
+          "cms": "CMS"
+        }
+      }
     }
   }
 }

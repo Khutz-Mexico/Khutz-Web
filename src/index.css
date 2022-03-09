@@ -15,6 +15,7 @@
 }
 
 * {
+  font-family: 'Open Sans', sans-serif;
   @apply text-[color:var(--fontColor1)] dark:text-[color:var(--fontColor1Dark)];
 }
 
@@ -23,6 +24,9 @@ body {
 }
 
 @layer components {
+  .primaryColor {
+    @apply text-[color:var(--fontColor1)] dark:text-[color:var(--fontColor1Dark)];
+  }
   .secondaryColor {
     @apply text-[color:var(--fontColor2)] dark:text-[color:var(--fontColor2Dark)];
   }
@@ -33,6 +37,10 @@ body {
 
 .poppins-font {
   font-family: 'Poppins', sans-serif;
+}
+
+.montserrat-font {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @layer components {
