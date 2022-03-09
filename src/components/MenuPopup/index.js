@@ -1,8 +1,17 @@
+import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import useClickOutside from '../../hooks/useClickOutside';
 
-export const MenuPopup = () => {
+export const MenuPopup = ({ onClose }) => {
+  const menuRef = useRef();
+
+  useClickOutside(menuRef, onClose);
+
   return (
-    <div className="w-[520px] h-screen fixed right-0 top-0 bg-[#1B212C] px-[100px] py-[110px]">
+    <div
+      className="w-[520px] h-screen fixed right-0 top-0 bg-[#1B212C] px-[100px] py-[110px]"
+      ref={menuRef}
+    >
       <span className="text-xs text-white opacity-40 font-light">
         NAVIGATION
       </span>
