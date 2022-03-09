@@ -36,7 +36,7 @@ export const MenuPopup = ({ onClose }) => {
       <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
       <ul className="flex space-x-7">
         <li className="text-white">Instagram</li>
-        <li className="text-white">Linkeding</li>
+        <li className="text-white">LinkedIn</li>
         <li className="text-white">Dribbble</li>
       </ul>
     </div>
