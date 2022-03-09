@@ -13,7 +13,7 @@ i18n
   .init({
     fallbackLng,
     detection: { checkWhitelist: true },
-    debug: true,
+    debug: false,
     whitelist: availableLanguages,
     interpolation: { escapeValue: false },
     react: { useSuspense: false },

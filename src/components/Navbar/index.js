@@ -4,6 +4,7 @@ import { useNavigate, Outlet } from 'react-router-dom';
 import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
 import { MenuPopup } from '../MenuPopup';
 import { MovilPopup } from '../MovilPopup';
+import LanguagePicker from './LanguagePicker';
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -32,10 +33,7 @@ export const Navbar = () => {
         {/* Left side */}
         <div className="hidden md:flex w-[200px] items-center">
           {/* <DropDownMenu /> */}
-          <ul className="flex items-center space-x-4">
-            <li className="text-[16px] font-medium">EN</li>
-            <li className="text-[16px] font-medium text-[#AAAAAA]">ES</li>
-          </ul>
+          <LanguagePicker />
         </div>
 
         {/* Middle side */}
