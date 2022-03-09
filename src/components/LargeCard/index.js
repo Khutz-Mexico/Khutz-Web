@@ -1,10 +1,39 @@
-import React from 'react';
+import { ChevronRightIcon } from '@heroicons/react/solid';
 
-export const LargeCard = ({ cardTitle, cardService }) => {
+export const LargeCard = ({
+  cardTitle,
+  cardService,
+  titleColor,
+  backgroundColor,
+}) => {
   return (
-    <div className="w-[350px] h-[560px] bg-slate-300 hover:scale-[98%] transform transition duration-300 ease-out">
-      <h2>{cardTitle}</h2>
-      <span>{cardService}</span>
+    <div
+      className={`flex flex-col w-[350px] md:w-[350px] h-[560px] ${backgroundColor} hover:scale-[102%] md:hover:scale-105 hover:drop-shadow-2xl transform transition duration-300 ease-out px-[45px] py-[40px]`}
+    >
+      {/* header */}
+      <div>
+        <span className="uppercase tracking-[4px] text-xs">
+          Caso de estudio
+        </span>
+      </div>
+      {/* image */}
+      <div className="flex flex-grow items-center justify-center">
+        <div className="w-48 h-48 bg-gray-500 flex items-center justify-center text-white">
+          Image space
+        </div>
+      </div>
+      {/* Title */}
+      <div className="flex-grow flex flex-col -space-y-2">
+        <h2 className={`text-[34px] font-semibold ${titleColor}`}>
+          {cardTitle}
+        </h2>
+        <span className="text-[34px] font-semibold">{cardService}</span>
+      </div>
+      {/* footer */}
+      <div className="flex items-center space-x-2 justify-end">
+        <a href="#">Ver más</a>
+        <ChevronRightIcon className="h-6" />
+      </div>
     </div>
   );
 };
