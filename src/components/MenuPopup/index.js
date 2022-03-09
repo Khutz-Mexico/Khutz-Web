@@ -1,8 +1,10 @@
 import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import useClickOutside from '../../hooks/useClickOutside';
 
 export const MenuPopup = ({ onClose }) => {
+  const { t } = useTranslation();
   const menuRef = useRef();
 
   useClickOutside(menuRef, onClose);
@@ -19,27 +21,27 @@ export const MenuPopup = ({ onClose }) => {
       <ul className="py-10">
         <li className="menu-item hover:text-[#AAAAAA]">
           <NavLink onClick={onClose} to="/">
-            Inicio
+            {t('menuPopUp.sections.home')}
           </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
           <NavLink onClick={onClose} to="/portfolio">
-            Portafolio
+            {t('menuPopUp.sections.portfolio')}
           </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
           <NavLink onClick={onClose} to="/services">
-            Servicios
+            {t('menuPopUp.sections.services')}
           </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
           <NavLink onClick={onClose} to="/quote">
-            Cotizar
+            {t('menuPopUp.sections.quote')}
           </NavLink>
         </li>
         <li className="menu-item hover:text-[#AAAAAA]">
           <NavLink onClick={onClose} to="/contact">
-            Contacto
+            {t('menuPopUp.sections.contact')}
           </NavLink>
         </li>
       </ul>

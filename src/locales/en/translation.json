@@ -47,5 +47,14 @@
     "recentWork": {
       "title": "Recent work"
     }
+  },
+  "menuPopUp": {
+    "sections": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "quote": "Quote",
+      "contact": "Contact"
+    }
   }
 }

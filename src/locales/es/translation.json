@@ -47,5 +47,14 @@
     "recentWork": {
       "title": "Trabajo reciente"
     }
+  },
+  "menuPopUp": {
+    "sections": {
+      "home": "Inicio",
+      "portfolio": "Portafolio",
+      "services": "Servicios",
+      "quote": "Cotizar",
+      "contact": "Contacto"
+    }
   }
 }
