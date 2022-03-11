@@ -12,7 +12,7 @@ export const projects = [
     resultTitle: 'This is a Title',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
@@ -31,7 +31,7 @@ export const projects = [
     resultTitle: 'Planeación y ejecución',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Desarrollo web y branding',
     location: 'Tulum Quintana Roo, México',
@@ -50,7 +50,7 @@ export const projects = [
     resultTitle: 'This is a Title',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Desarrollo web y branding',
     location: 'Tulum Quintana Roo, México',
@@ -69,7 +69,7 @@ export const projects = [
     resultTitle: 'Incremento de las ventas',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
@@ -88,7 +88,7 @@ export const projects = [
     resultTitle: 'Dirección y ejecución',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Desarrollo web y branding',
     location: 'Puebla, México',
@@ -107,7 +107,7 @@ export const projects = [
     resultTitle: 'Ejecución de ideas',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: '',
+    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
     imagesBigSlider: '',
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',

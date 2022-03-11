@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Button from '../components/Button';
+import { SmallCard } from '../components/SmallCard';
 import { projects } from '../data/database';
 
 export const ProjectDetailsScreen = () => {
@@ -13,8 +14,8 @@ export const ProjectDetailsScreen = () => {
     img,
     slogan,
     description,
-    // resultTitle,
-    // resultContent,
+    resultTitle,
+    resultContent,
     services,
     location,
     url,
@@ -33,9 +34,9 @@ export const ProjectDetailsScreen = () => {
         />
 
         <div>
-          <p className="uppercase tracking-[4px] text-xs mb-5 opacity-60 text-gray-700">
+          <span className="uppercase tracking-[4px] text-xs mb-5 opacity-60 text-gray-700">
             caso de estudio
-          </p>
+          </span>
           <div className="-space-y-5 pb-[50px]">
             <h1 className="text-[55px] font-bold">{title}</h1>
             <h2 className={`${textColor} text-[55px] font-bold`}>{subtitle}</h2>
@@ -55,10 +56,10 @@ export const ProjectDetailsScreen = () => {
 
       <div className="flex justify-betweenpx-10 md:px-[100px] space-x-24 lg:px-[250px] pt-[70px] pb-[140px]">
         <div className="w-2/3 pr-10">
-          <p className="uppercase tracking-[4px] text-xs mb-5 opacity-60 text-gray-600">
+          <span className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
             caso de estudio
-          </p>
-          <h2 className="text-3xl font-bold mb-[25px]">{slogan}</h2>
+          </span>
+          <h3 className="text-3xl font-bold mb-[25px] mt-4">{slogan}</h3>
           <p className="text-[18px] font-light">{description}</p>
         </div>
 
@@ -93,6 +94,22 @@ export const ProjectDetailsScreen = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="flex overflow-scroll scrollbar-hide pb-[140px]">
+        <div className="flex space-x-10 first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
+          {projects?.map(({ imagesSmallSlider }) => (
+            <SmallCard key={title} images={imagesSmallSlider} />
+          ))}
+        </div>
+      </div>
+
+      <div className="px-10 md:px-[100px] lg:pl-[250px] lg:pr-[140px] pb-[110px]">
+        <span className="uppercase tracking-[4px] text-xs mb-5 opacity-60 text-gray-700">
+          El resultado
+        </span>
+        <h3 className="text-3xl font-bold mb-[25px]">{resultTitle}</h3>
+        <p className="text-[18px] font-light">{resultContent}</p>
       </div>
     </div>
   );
