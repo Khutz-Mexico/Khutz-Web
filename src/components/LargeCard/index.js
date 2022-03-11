@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 export const LargeCard = ({
   projectIndex,
   cardTitle,
-  cardService,
-  titleColor,
+  cardSubtitle,
+  cardTextColor,
   backgroundColor,
+  img,
 }) => {
   return (
     <Link to={`/projects/${projectIndex}`}>
@@ -21,16 +22,16 @@ export const LargeCard = ({
         </div>
         {/* image */}
         <div className="flex flex-grow items-center justify-center">
-          <div className="w-48 h-48 bg-gray-500 flex items-center justify-center text-white">
-            Image space
+          <div className="w-60 h-60 flex items-center justify-center">
+            <img className="w-full" src={img} alt={cardTitle} />
           </div>
         </div>
         {/* Title */}
         <div className="flex-grow flex flex-col -space-y-2">
-          <h2 className={`text-[34px] font-semibold ${titleColor}`}>
+          <h2 className={`text-[34px] font-semibold ${cardTextColor}`}>
             {cardTitle}
           </h2>
-          <span className="text-[34px] font-semibold">{cardService}</span>
+          <span className="text-[34px] font-semibold">{cardSubtitle}</span>
         </div>
         {/* footer */}
         <div className="flex items-center space-x-2 justify-end">

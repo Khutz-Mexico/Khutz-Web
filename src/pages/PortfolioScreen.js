@@ -11,14 +11,15 @@ export const PortfolioScreen = () => {
         <div className="flex overflow-scroll scrollbar-hide h-full pt-5 md:pt-[30px]">
           <div className="flex space-x-14 first-of-type:ml-8 md:first-of-type:ml-[40px] md:last-of-type:mr-[40px]">
             {projects?.map(
-              ({ title, service, titleColor, backgroundColor }, query) => (
+              ({ title, subtitle, textColor, backgroundColor, img }, query) => (
                 <LargeCard
                   key={title}
                   projectIndex={query}
                   cardTitle={title}
-                  cardService={service}
-                  titleColor={titleColor}
+                  cardSubtitle={subtitle}
+                  cardTextColor={textColor}
                   backgroundColor={backgroundColor}
+                  img={img}
                 />
               ),
             )}
