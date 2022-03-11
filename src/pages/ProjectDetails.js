@@ -19,6 +19,7 @@ export const ProjectDetailsScreen = () => {
     location,
     url,
   } = project;
+
   console.log('project', project);
   console.log('img', img);
 
@@ -28,7 +29,7 @@ export const ProjectDetailsScreen = () => {
         <img
           src={linePath}
           alt="line-path"
-          className="absolute right-0 top-0 z-50"
+          className="absolute right-0 top-0 -z-10"
         />
 
         <div>
@@ -41,13 +42,13 @@ export const ProjectDetailsScreen = () => {
           </div>
 
           <div className="w-56">
-            <Button rightArrow solid>
-              <a href={`https://${url}`}>{'Ver website'}</a>
+            <Button rightArrow solid onClick={`https://${url}`}>
+              {'Ver website'}
             </Button>
           </div>
         </div>
 
-        <div className="hidden lg:flex w-[450px] h-[350px] z-50">
+        <div className="hidden lg:flex w-[450px] h-[350px]">
           <img src={img} alt={title} />
         </div>
       </div>

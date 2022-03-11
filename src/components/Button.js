@@ -6,10 +6,11 @@ const Button = ({ children, rightArrow, solid, outlined, onClick }) => {
       className={`flex justify-center items-center space-x-4 w-full h-[55px] px-8 ${
         solid ? 'bg-[color:var(--primaryColor)]' : ''
       } ${outlined ? 'border' : ''} rounded-[28px] cursor-pointer select-none`}
-      onClick={onClick}
     >
       <div className={solid ? 'text-[color:var(--primaryColorDark)]' : ''}>
-        {children}
+        <a href={onClick} target="_blank" rel="noreferrer">
+          {children}
+        </a>
       </div>
       {rightArrow && (
         <ArrowRightIcon
