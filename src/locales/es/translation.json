@@ -45,7 +45,12 @@
     },
 
     "recentWork": {
-      "title": "Trabajo reciente"
+      "title": "Trabajo reciente",
+      "lets": "Vamos",
+      "work": "trabajemos",
+      "toghether": "juntos!",
+      "likeOurWork": "¿TE GUSTA NUESTRO TRABAJO?",
+      "contact": "Contactar"
     }
   },
   "menuPopUp": {

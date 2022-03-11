@@ -10,6 +10,8 @@
   --primaryColorDark: #ffffff;
   --secondaryColor: #a58861;
   --secondaryColorDark: #ffd6ae;
+  --tertiaryColor: #aaaaaa;
+  --tertiaryColorDark: #aaaaaa;
 }
 
 * {
@@ -27,6 +29,9 @@ body {
   }
   .secondaryColor {
     @apply text-[color:var(--secondaryColor)] dark:text-[color:var(--secondaryColorDark)];
+  }
+  .tertiaryColor {
+    @apply text-[color:var(--tertiaryColor)] dark:text-[color:var(--tertiaryColorDark)];
   }
   .filled {
     @apply bg-[color:var(--primaryColor)] dark:bg-[color:var(--primaryColorDark)];

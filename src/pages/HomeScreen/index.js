@@ -2,6 +2,7 @@ import React from 'react';
 import Body from './Body';
 import Presentation from './Presentation';
 import RecentWork from './RecentWork';
+import WorkToghether from './WorkToghether';
 
 export const HomeScreen = () => {
   return (
@@ -9,6 +10,7 @@ export const HomeScreen = () => {
       <Presentation />
       <Body />
       <RecentWork />
+      <WorkToghether />
     </div>
   );
 };
