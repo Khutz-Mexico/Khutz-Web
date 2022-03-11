@@ -7,7 +7,7 @@ const Presentation = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="screen-height flex flex-col items-center pt-14 md:pt-[120px]">
+    <div className="screen-height flex flex-col items-center pt-[120px] md:pt-[120px]">
       <div className="flex flex-col text-3xl md:text-[70px] md:leading-[85px]">
         <p className="font-semibold text-center">
           {t('home.presentation.title.weHelp')}
@@ -27,7 +27,7 @@ const Presentation = () => {
           {t('home.presentation.ourWork')}
         </Button>
       </div>
-      <div className="absolute flex justify-between items-center bottom-10 space-x-[35px] select-none">
+      <div className="absolute flex justify-between items-center bottom-0 md:bottom-10 space-x-[35px] select-none">
         <div className="flex items-center justify-between space-x-10">
           <ArrowNarrowDownIcon className="arrow" />
           <div className="space-x-2">

@@ -5,7 +5,7 @@ const Body = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="screen-height flex justify-center items-start space-x-[133px] w-full pt-[127px]">
+    <div className="screen-height flex flex-col md:flex-row justify-center items-center md:items-start space-x-[133px] w-full pt-[127px]">
       <div className="flex flex-col items-stretch space-y-[36px]">
         <div>
           <p className="text-[32px] font-bold">{t('home.body.howCanWe')}</p>
