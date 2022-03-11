@@ -5,7 +5,7 @@ import RecentWork from './RecentWork';
 
 export const HomeScreen = () => {
   return (
-    <div className="flex flex-col items-center mt-14 md:mt-[120px]">
+    <div className="flex flex-col items-center">
       <Presentation />
       <Body />
       <RecentWork />

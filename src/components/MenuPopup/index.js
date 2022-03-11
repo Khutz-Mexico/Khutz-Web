@@ -22,7 +22,6 @@ export const MenuPopup = ({ onClose }) => {
       <ul className="py-10">
         {LINKS.map((link) => {
           const isSelected = link.path === location.pathname;
-          console.log('isSelected', link.path, location.pathname, isSelected);
           return (
             <li
               key={link.path}

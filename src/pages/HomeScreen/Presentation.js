@@ -7,7 +7,7 @@ const Presentation = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className="screen-height flex flex-col items-center pt-14 md:pt-[120px]">
       <div className="flex flex-col text-3xl md:text-[70px] md:leading-[85px]">
         <p className="font-semibold text-center">
           {t('home.presentation.title.weHelp')}
@@ -41,7 +41,7 @@ const Presentation = () => {
           <ArrowNarrowDownIcon className="arrow" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
