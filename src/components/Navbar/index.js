@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
-// import DropDownMenu from '../DropDownMenu';
 import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
-import { MenuPopup } from '../MenuPopup';
-import { MovilPopup } from '../MovilPopup';
+import { MenuPopup } from 'components/MenuPopup';
+import { MovilPopup } from 'components/MovilPopup';
 import LanguagePicker from './LanguagePicker';
 
 export const Navbar = () => {

@@ -1,5 +1,5 @@
-import { projects } from '../data/database';
-import { LargeCard } from '../components/LargeCard';
+import { projects } from 'data/database';
+import { LargeCard } from 'components/LargeCard';
 import { BsInstagram, BsGithub, BsDribbble } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 

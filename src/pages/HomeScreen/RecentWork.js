@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import Button from 'components/Button';
 
 const RecentWork = () => {
   const { t } = useTranslation();
@@ -22,6 +24,11 @@ const RecentWork = () => {
           />
         </a>
       </div>
+      <Link className="w-[178px] mt-[77px]" to="/portfolio">
+        <Button rightArrow outlined>
+          <div className="font-semibold">{t('home.recentWork.viewAll')}</div>
+        </Button>
+      </Link>
     </div>
   );
 };

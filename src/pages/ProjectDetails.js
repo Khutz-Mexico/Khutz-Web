@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Button from '../components/Button';
-import { SmallCard } from '../components/SmallCard';
-import { projects } from '../data/database';
+import Button from 'components/Button';
+import { SmallCard } from 'components/SmallCard';
+import { projects } from 'data/database';
 
 export const ProjectDetailsScreen = () => {
   const params = useParams();
@@ -46,9 +46,11 @@ export const ProjectDetailsScreen = () => {
           </div>
 
           <div className="w-48 md:w-56">
-            <Button rightArrow solid onClick={`https://${url}`}>
-              {'Ver website'}
-            </Button>
+            <a href={`https://${url}`} target="_blank" rel="noreferrer">
+              <Button rightArrow solid>
+                {'Ver website'}
+              </Button>
+            </a>
           </div>
         </div>
 
