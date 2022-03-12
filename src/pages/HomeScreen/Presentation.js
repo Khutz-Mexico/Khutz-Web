@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 const Presentation = () => {
   const { t } = useTranslation();
@@ -22,11 +23,11 @@ const Presentation = () => {
           {t('home.presentation.title.inTheDigitalAge')}
         </p>
       </div>
-      <div className="w-60 mt-[70px]">
+      <Link className="w-60 mt-[70px]" to="/portfolio">
         <Button rightArrow solid>
           {t('home.presentation.ourWork')}
         </Button>
-      </div>
+      </Link>
       <div className="absolute flex justify-between items-center bottom-0 md:bottom-10 space-x-[35px] select-none">
         <div className="flex items-center justify-between space-x-10">
           <ArrowNarrowDownIcon className="arrow" />
