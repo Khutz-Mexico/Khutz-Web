@@ -31,7 +31,7 @@ export const ProjectDetailsScreen = () => {
         <img
           src={linePath}
           alt="line-path"
-          className="hidden md:absolute right-0 top-0 -z-10"
+          className="hidden md:flex absolute right-0 top-0 -z-10"
         />
 
         <div>

@@ -26,7 +26,7 @@ export const PortfolioScreen = () => {
           </div>
         </div>
         {/* Footer */}
-        <div className="flex absolute bottom-[40px] left-8 md:left-[40px] space-x-6">
+        <div className="hidden md:flex absolute bottom-[40px] left-8 md:left-[40px] space-x-6">
           <NavLink to="/">
             <BsInstagram className="h-7" />
           </NavLink>
