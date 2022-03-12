@@ -12,7 +12,7 @@ export const LargeCard = ({
   return (
     <Link to={`/projects/${projectIndex}`}>
       <div
-        className={`flex flex-col w-[350px] md:w-[350px] h-[560px] ${backgroundColor} hover:scale-[102%] md:hover:scale-105 hover:drop-shadow-2xl transform transition duration-300 ease-out px-[45px] py-[40px] cursor-pointer select-none`}
+        className={`flex flex-col w-[350px] md:w-[350px] h-[calc(85vh-var(--navbar-height))] ${backgroundColor} hover:scale-[102%] md:hover:scale-105 hover:drop-shadow-2xl transform transition duration-300 ease-out px-[45px] py-[40px] cursor-pointer select-none`}
       >
         {/* header */}
         <div>

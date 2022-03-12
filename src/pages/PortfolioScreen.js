@@ -8,8 +8,8 @@ export const PortfolioScreen = () => {
     <>
       <div className="relative flex flex-col justify-between h-[calc(100vh-var(--navbar-height))] w-full overflow-hidden">
         {/* cards */}
-        <div className="flex overflow-scroll scrollbar-hide h-full pt-5 md:pt-[30px]">
-          <div className="flex space-x-14 first-of-type:ml-8 md:first-of-type:ml-[40px] md:last-of-type:mr-[40px]">
+        <div className="flex overflow-scroll scrollbar-hide h-full pt-2 md:pt-6">
+          <div className="flex space-x-14 first-of-type:ml-8 last-of-type:mr-8 md:first-of-type:ml-[40px] md:last-of-type:mr-[40px]">
             {projects?.map(
               ({ title, subtitle, textColor, backgroundColor, img }, query) => (
                 <LargeCard
