@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from 'components/Button';
 
@@ -23,13 +24,15 @@ const Body = () => {
           <p>{t('home.body.paragraph2.line4')}</p>
           <p>{t('home.body.paragraph2.line5')}</p>
         </div>
-        <div className="w-[100px]">
-          <Button rightArrow>
-            <div className="font-semibold">{t('home.body.services')}</div>
+        <div className="w-[200px]">
+          <Button rightArrow left>
+            <NavLink to="/services" className="font-semibold">
+              {t('home.body.services')}
+            </NavLink>
           </Button>
         </div>
       </div>
-      <div className="flex justify-between space-x-[45px]">
+      <div className="flex justify-between items-center space-x-[45px] md:pt-28">
         <div className="flex flex-col">
           <p className="secondaryColor text-[13px] font-bold mb-1">
             {t('home.body.servicesSection.design.title')}

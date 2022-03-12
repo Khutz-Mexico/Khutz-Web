@@ -1,9 +1,11 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
 
-const Button = ({ children, rightArrow, solid, outlined, onClick }) => {
+const Button = ({ children, rightArrow, solid, outlined, onClick, left }) => {
   return (
     <div
-      className={`flex justify-center items-center space-x-4 w-full h-[55px] px-8 ${
+      className={`flex ${
+        left ? 'justity-start px-0' : 'justify-center px-8'
+      } items-center space-x-4 w-full h-[55px] ${
         solid ? 'bg-[color:var(--primaryColor)]' : ''
       } ${outlined ? 'border' : ''} rounded-[28px] cursor-pointer select-none`}
     >
