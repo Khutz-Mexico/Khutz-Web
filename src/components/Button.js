@@ -8,9 +8,7 @@ const Button = ({ children, rightArrow, solid, outlined, onClick }) => {
       } ${outlined ? 'border' : ''} rounded-[28px] cursor-pointer select-none`}
     >
       <div className={solid ? 'text-[color:var(--primaryColorDark)]' : ''}>
-        <a href={onClick} target="_blank" rel="noreferrer">
-          {children}
-        </a>
+        {children}
       </div>
       {rightArrow && (
         <ArrowRightIcon

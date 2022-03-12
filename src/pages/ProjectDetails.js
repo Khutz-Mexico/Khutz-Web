@@ -46,9 +46,11 @@ export const ProjectDetailsScreen = () => {
           </div>
 
           <div className="w-48 md:w-56">
-            <Button rightArrow solid onClick={`https://${url}`}>
-              {'Ver website'}
-            </Button>
+            <a href={`https://${url}`} target="_blank" rel="noreferrer">
+              <Button rightArrow solid>
+                {'Ver website'}
+              </Button>
+            </a>
           </div>
         </div>
 
