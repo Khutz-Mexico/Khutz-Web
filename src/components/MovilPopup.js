@@ -1,23 +1,42 @@
+import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import useClickOutside from '../hooks/useClickOutside';
 
-export const MovilPopup = () => {
+export const MovilPopup = ({ onClose }) => {
+  const menuRef = useRef();
+
+  useClickOutside(menuRef, onClose);
+
   return (
-    <div className="absolute right-0 bottom-14 w-[250px] rounded-l-2xl h-[250px] bg-[#1B212C]">
+    <div
+      className="absolute right-0 bottom-14 w-[250px] rounded-l-2xl h-[250px] bg-[#1B212C]"
+      ref={menuRef}
+    >
       <ul className="flex flex-col w-full h-full items-start justify-between pr-8 py-7">
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink to="/">Home</NavLink>
+          <NavLink onClick={onClose} to="/">
+            Home
+          </NavLink>
         </li>
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink to="/portfolio">Portafolio</NavLink>
+          <NavLink onClick={onClose} to="/portfolio">
+            Portafolio
+          </NavLink>
         </li>
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink to="/services">Servicios</NavLink>
+          <NavLink onClick={onClose} to="/services">
+            Servicios
+          </NavLink>
         </li>
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink to="/quote">Cotizar</NavLink>
+          <NavLink onClick={onClose} to="/quote">
+            Cotizar
+          </NavLink>
         </li>
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink to="/contact">Contacto</NavLink>
+          <NavLink onClick={onClose} to="/contact">
+            Contacto
+          </NavLink>
         </li>
       </ul>
     </div>

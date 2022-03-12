@@ -26,7 +26,8 @@ export const ProjectDetailsScreen = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-start px-10 py-20 md:px-[100px] lg:px-[250px] md:py-[160px] h-[calc(100vh-var(--navbar-height))]">
+      {/* banner */}
+      <div className="flex justify-between items-start px-10 py-32 md:px-[100px] lg:px-[250px] md:py-[160px] h-[calc(100vh-var(--navbar-height))]">
         <img
           src={linePath}
           alt="line-path"
@@ -38,7 +39,7 @@ export const ProjectDetailsScreen = () => {
             caso de estudio
           </span>
           <div className="-space-y-5 pb-[50px]">
-            <h1 className="text-[55px] font-bold">{title}</h1>
+            <h1 className="text-[65px] md:text-[55px] font-bold">{title}</h1>
             <h2 className={`${textColor} text-[55px] font-bold`}>{subtitle}</h2>
           </div>
 
@@ -54,8 +55,9 @@ export const ProjectDetailsScreen = () => {
         </div>
       </div>
 
-      <div className="flex justify-betweenpx-10 md:px-[100px] space-x-24 lg:px-[250px] pt-[70px] pb-[140px]">
-        <div className="w-2/3 pr-10">
+      {/* description */}
+      <div className="flex flex-col md:flex-row justify-betweenpx-10 px-10 md:px-[100px] space-y-14 md:space-y-0 md:space-x-24 lg:px-[250px] pt-[50px]">
+        <div className="w-full md:w-2/3 md:pr-10">
           <span className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
             caso de estudio
           </span>
@@ -96,19 +98,21 @@ export const ProjectDetailsScreen = () => {
         </div>
       </div>
 
-      <div className="flex overflow-scroll scrollbar-hide pb-[140px]">
-        <div className="flex space-x-10 first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
+      {/* image */}
+      <div className="flex overflow-scroll scrollbar-hide py-[100px] md:py-[140px]">
+        <div className="flex space-x-10 first-of-type:ml-10 md:first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
           {projects?.map(({ imagesSmallSlider }) => (
             <SmallCard key={title} images={imagesSmallSlider} />
           ))}
         </div>
       </div>
 
+      {/* result */}
       <div className="px-10 md:px-[100px] lg:pl-[250px] lg:pr-[140px] pb-[110px]">
-        <span className="uppercase tracking-[4px] text-xs mb-5 opacity-60 text-gray-700">
+        <span className="uppercase tracking-[4px] text-xs opacity-60 text-gray-700">
           El resultado
         </span>
-        <h3 className="text-3xl font-bold mb-[25px]">{resultTitle}</h3>
+        <h3 className="text-3xl font-bold mb-[25px] mt-4">{resultTitle}</h3>
         <p className="text-[18px] font-light">{resultContent}</p>
       </div>
     </div>
