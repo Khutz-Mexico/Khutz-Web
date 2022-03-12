@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { AVAILABLE_LANGUAGES } from '../../constants';
-import i18n from '../../i18nextConf';
+import { AVAILABLE_LANGUAGES } from 'constants';
+import i18n from 'i18nextConf';
 
 const LanguagePicker = () => {
   const selectedLanguage = i18n.language.replace(/-.*/, '');

@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom';
 
-import { Navbar } from '../components/Navbar';
-import { ContactScreen } from '../pages/ContactScreen';
-import { HomeScreen } from '../pages/HomeScreen';
-import { PortfolioScreen } from '../pages/PortfolioScreen';
-import { ProjectDetailsScreen } from '../pages/ProjectDetails';
-import { QuoteScreen } from '../pages/QuoteScreen';
-import { ServicesScreen } from '../pages/ServicesScreen';
+import { Navbar } from 'components/Navbar';
+import { ContactScreen } from 'pages/ContactScreen';
+import { HomeScreen } from 'pages/HomeScreen';
+import { PortfolioScreen } from 'pages/PortfolioScreen';
+import { ProjectDetailsScreen } from 'pages/ProjectDetails';
+import { QuoteScreen } from 'pages/QuoteScreen';
+import { ServicesScreen } from 'pages/ServicesScreen';
 
 const DefaultRoute = () => {
   const navigate = useNavigate();

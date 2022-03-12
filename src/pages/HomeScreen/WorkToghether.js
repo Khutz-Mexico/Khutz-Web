@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import Button from '../../components/Button';
+import Button from 'components/Button';
 
 const WorkToghether = () => {
   const { t } = useTranslation();

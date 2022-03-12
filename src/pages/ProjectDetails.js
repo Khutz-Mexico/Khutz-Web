@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import Button from '../components/Button';
-import { SmallCard } from '../components/SmallCard';
-import { projects } from '../data/database';
+import Button from 'components/Button';
+import { SmallCard } from 'components/SmallCard';
+import { projects } from 'data/database';
 
 export const ProjectDetailsScreen = () => {
   const params = useParams();

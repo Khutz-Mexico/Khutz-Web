@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import useClickOutside from '../../hooks/useClickOutside';
+import useClickOutside from 'hooks/useClickOutside';
 import { LINKS } from './constants';
 
 export const MenuPopup = ({ onClose }) => {
