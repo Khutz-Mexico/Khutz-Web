@@ -6,7 +6,7 @@ import { projects } from 'data/database';
 export const ProjectDetailsScreen = () => {
   const params = useParams();
   const linePath = '/assets/line.svg';
-  const project = projects[params.projectId];
+  const project = projects.find((x) => x.query === params.query);
   const {
     title,
     subtitle,
@@ -105,8 +105,8 @@ export const ProjectDetailsScreen = () => {
       {/* image */}
       <div className="flex overflow-scroll scrollbar-hide py-[100px] md:py-[140px]">
         <div className="flex space-x-10 first-of-type:ml-6 last-of-type:mr-6 md:first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
-          {projects?.map(({ imagesSmallSlider }) => (
-            <SmallCard key={title} images={imagesSmallSlider} />
+          {projects?.map(({ imagesSmallSlider }, i) => (
+            <SmallCard key={i} images={imagesSmallSlider} />
           ))}
         </div>
       </div>
@@ -117,7 +117,7 @@ export const ProjectDetailsScreen = () => {
           El resultado
         </span>
         <h3 className="text-3xl font-bold mb-[25px] mt-4">{resultTitle}</h3>
-        <p className="text-[18px] font-light">{resultContent}</p>
+        <p className="text-lg font-light">{resultContent}</p>
       </div>
     </div>
   );

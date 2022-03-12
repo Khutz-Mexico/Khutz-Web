@@ -1,29 +1,36 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { projects } from 'data/database';
+import { MiddleCard } from 'components/MiddleCard';
 import Button from 'components/Button';
 
 const RecentWork = () => {
   const { t } = useTranslation();
+  const filterProjects = projects.slice(0, 2);
 
   return (
-    <div className="screen-height flex flex-col items-center">
+    <div className="w-full md:screen-height flex flex-col justify-center items-center overflow-hidden">
+      {/* title */}
       <p className="text-[32px] font-bold">{t('home.recentWork.title')}</p>
-      <div className="flex justify-between space-x-12 mt-[80px]">
-        <a href="https://calidomx.com" target="_blank" rel="noreferrer">
-          <img
-            className="duration-300 hover:scale-105 cursor-pointer select-none"
-            draggable={false}
-            src="/assets/recentWork/calido.png"
-          />
-        </a>
-        <a href="https://onlyhomestulum.com" target="_blank" rel="noreferrer">
-          <img
-            className="duration-300 hover:scale-105 cursor-pointer select-none"
-            draggable={false}
-            src="/assets/recentWork/only-homes.png"
-          />
-        </a>
+      {/* cards */}
+      <div className="justify-center flex overflow-scroll scrollbar-hide w-full">
+        <div className="flex pt-[80px] space-x-14">
+          {filterProjects?.map(
+            ({ title, subtitle, textColor, img, backgroundColor, query }) => (
+              <MiddleCard
+                key={query}
+                cardTitle={title}
+                cardSubtitle={subtitle}
+                color={textColor}
+                image={img}
+                backgroundColor={backgroundColor}
+                query={query}
+              />
+            ),
+          )}
+        </div>
       </div>
+
       <Link className="w-[178px] mt-[77px]" to="/portfolio">
         <Button rightArrow outlined>
           <div className="font-semibold">{t('home.recentWork.viewAll')}</div>

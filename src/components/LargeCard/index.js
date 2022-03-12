@@ -2,15 +2,15 @@ import { ChevronRightIcon } from '@heroicons/react/solid';
 import { Link } from 'react-router-dom';
 
 export const LargeCard = ({
-  projectIndex,
   cardTitle,
   cardSubtitle,
   cardTextColor,
   backgroundColor,
   img,
+  query,
 }) => {
   return (
-    <Link to={`/projects/${projectIndex}`}>
+    <Link to={`/projects/${query}`}>
       <div
         className={`flex flex-col w-[350px] md:w-[350px] h-[calc(85vh-var(--navbar-height))] ${backgroundColor} hover:scale-[102%] md:hover:scale-105 hover:drop-shadow-2xl transform transition duration-300 ease-out px-[45px] py-[40px] cursor-pointer select-none`}
       >

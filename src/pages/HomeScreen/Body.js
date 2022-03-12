@@ -6,18 +6,20 @@ const Body = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="screen-height flex flex-col md:flex-row justify-center items-center md:items-start space-x-[133px] w-full pt-[127px]">
-      <div className="flex flex-col items-stretch space-y-[36px]">
-        <div>
-          <p className="text-[32px] font-bold">{t('home.body.howCanWe')}</p>
-          <p className="text-[32px] font-bold">{t('home.body.helpYou')}</p>
+    // Main container
+    <div className="px-6 md:px-[240px] py-14 md:py-[120px] space-y-10 md:space-y-0 md:screen-height flex flex-col md:flex-row md:justify-center md:items-start md:space-x-[133px] w-full">
+      {/* left */}
+      <div className="flex flex-col space-y-[36px]">
+        <div className="text-[32px] font-bold">
+          <p>{t('home.body.howCanWe')}</p>
+          <p>{t('home.body.helpYou')}</p>
         </div>
-        <div>
+        <div className="text-lg font-light">
           <p>{t('home.body.paragraph1.line1')}</p>
           <p>{t('home.body.paragraph1.line2')}</p>
           <p>{t('home.body.paragraph1.line3')}</p>
         </div>
-        <div>
+        <div className="text-lg font-light">
           <p>{t('home.body.paragraph2.line1')}</p>
           <p>{t('home.body.paragraph2.line2')}</p>
           <p>{t('home.body.paragraph2.line3')}</p>
@@ -32,43 +34,29 @@ const Body = () => {
           </Button>
         </div>
       </div>
-      <div className="flex justify-between items-center space-x-[45px] md:pt-28">
+
+      {/* Right */}
+      <div className="md:flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-[45px] md:pt-28">
         <div className="flex flex-col">
-          <p className="secondaryColor text-[13px] font-bold mb-1">
+          <p className="secondaryColor text-[16px] md:text-[13px] font-bold mb-1">
             {t('home.body.servicesSection.design.title')}
           </p>
-          <div className="montserrat-font flex flex-col space-y-2">
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.design.uxUiDesign')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.design.prototyping')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.design.branding')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.design.illustration')}
-            </p>
+          <div className="montserrat-font flex flex-col space-y-2 primaryColor text-lg md:text-sm font-semibold">
+            <p>{t('home.body.servicesSection.design.uxUiDesign')}</p>
+            <p>{t('home.body.servicesSection.design.prototyping')}</p>
+            <p>{t('home.body.servicesSection.design.branding')}</p>
+            <p>{t('home.body.servicesSection.design.illustration')}</p>
           </div>
         </div>
         <div className="flex flex-col">
-          <p className="secondaryColor text-[13px] font-bold mb-1">
+          <p className="secondaryColor text-[16px] md:text-[13px] font-bold mb-1">
             {t('home.body.servicesSection.development.title')}
           </p>
-          <div className="montserrat-font flex flex-col space-y-2">
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.development.webDevelopment')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.development.apps')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.development.crmAndErp')}
-            </p>
-            <p className="primaryColor text-sm font-semibold">
-              {t('home.body.servicesSection.development.cms')}
-            </p>
+          <div className="montserrat-font flex flex-col space-y-2 primaryColor text-lg md:text-sm font-semibold">
+            <p>{t('home.body.servicesSection.development.webDevelopment')}</p>
+            <p>{t('home.body.servicesSection.development.apps')}</p>
+            <p>{t('home.body.servicesSection.development.crmAndErp')}</p>
+            <p>{t('home.body.servicesSection.development.cms')}</p>
           </div>
         </div>
       </div>

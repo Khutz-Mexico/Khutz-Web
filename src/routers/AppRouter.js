@@ -29,7 +29,7 @@ export const AppRouter = () => {
           <Route path="services" element={<ServicesScreen />} />
           <Route path="quote" element={<QuoteScreen />} />
           <Route path="contact" element={<ContactScreen />} />
-          <Route path="projects/:projectId" element={<ProjectDetailsScreen />} />
+          <Route path="projects/:query" element={<ProjectDetailsScreen />} />
         </Route>
 
         <Route path="/services" element={<ServicesScreen />} />
