@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
 import Button from 'components/Button';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +27,7 @@ const Presentation = () => {
           {t('home.presentation.ourWork')}
         </Button>
       </Link>
-      <div className="hidden absolute md:flex justify-between items-center bottom-20 md:bottom-10 space-x-[35px] select-none">
+      {/* <div className="hidden z-20 absolute md:flex justify-between items-center bottom-20 md:bottom-10 space-x-[35px] select-none">
         <div className="flex items-center justify-between space-x-10">
           <ArrowNarrowDownIcon className="arrow" />
           <div className="space-x-2">
@@ -41,7 +40,7 @@ const Presentation = () => {
           </div>
           <ArrowNarrowDownIcon className="arrow" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

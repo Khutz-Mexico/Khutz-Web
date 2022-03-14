@@ -30,7 +30,7 @@ const Body = () => {
       </div>
 
       {/* Right */}
-      <div className="md:flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-[45px] md:pt-28">
+      <div className="md:w-full md:flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-[40px] md:pt-28">
         <div className="flex flex-col">
           <p className="secondaryColor text-[16px] md:text-[13px] font-bold mb-1">
             {t('home.body.servicesSection.design.title')}
