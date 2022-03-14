@@ -2,7 +2,7 @@
   "home": {
     "presentation": {
       "title": {
-        "weHelp": "WE HELP",
+        "weHelp": "HELPING",
         "brandsTo": "BRANDS TO",
         "thrive": "THRIVE",
         "inTheDigitalAge": "IN THE DIGITAL AGE"
@@ -13,18 +13,8 @@
     "body": {
       "howCanWe": "How can we",
       "helpYou": "help you?",
-      "paragraph1": {
-        "line1": "We help boost brand and businesses digital presence",
-        "line2": "through web design and development,",
-        "line3": "generating growth in your business."
-      },
-      "paragraph2": {
-        "line1": "We always seek to be disruptive, and go against",
-        "line2": "those who are afraid of change. Our passion for",
-        "line3": "design and our ability to program,",
-        "line4": "combined with your vision will guarantee amazing",
-        "line5": "results."
-      },
+      "paragraph1": "We help boost brand and businesses digital presence through web design and development, generating growth in your business.",
+      "paragraph2": "We always seek to be disruptive, and go against those who are afraid of change. Our passion for design and our ability to program, combined with your vision will guarantee amazing results.",
       "services": "Services",
       "servicesSection": {
         "design": {

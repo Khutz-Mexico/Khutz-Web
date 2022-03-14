@@ -9,12 +9,12 @@ const RecentWork = () => {
   const filterProjects = projects.slice(0, 2);
 
   return (
-    <div className="w-full md:screen-height flex flex-col justify-center items-center overflow-hidden">
+    <div className="pt-12 md:pt-0 w-full md:screen-height flex flex-col justify-center items-center overflow-hidden">
       {/* title */}
       <p className="text-[32px] font-bold">{t('home.recentWork.title')}</p>
       {/* cards */}
-      <div className="justify-center flex overflow-scroll scrollbar-hide w-full">
-        <div className="flex pt-[80px] space-x-14">
+      <div className="justify-center flex flex-col md:flex-row md:overflow-scroll scrollbar-hide w-full">
+        <div className="flex flex-col md:flex-row md:w-full items-center md:justify-center pt-12 md:pt-[80px] space-y-10 md:space-y-0 md:space-x-14 first-of-type:pl-6 last-of-type:pr-6">
           {filterProjects?.map(
             ({ title, subtitle, textColor, img, backgroundColor, query }) => (
               <MiddleCard

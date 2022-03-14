@@ -13,18 +13,8 @@
     "body": {
       "howCanWe": "¿Cómo podemos",
       "helpYou": "ayudarte?",
-      "paragraph1": {
-        "line1": "Ayudamos a impulsar la presencia digital de marcas",
-        "line2": "y empresas a través del diseño y desarrollo web,",
-        "line3": "derivando un crecimiento en sus negocios."
-      },
-      "paragraph2": {
-        "line1": "Buscamos ser siempre disruptivos, e ir en contra de",
-        "line2": "aquellos que temen al cambio. Nuestra pasión por el",
-        "line3": "diseño y nuestras habilidades para programar,",
-        "line4": "combinadas con tu visión garantizará grandes",
-        "line5": "resultados."
-      },
+      "paragraph1": "Ayudamos a impulsar la presencia digital de marcas y empresas a través del diseño y desarrollo web, generando un crecimiento en sus negocios.",
+      "paragraph2": "Buscamos ser siempre disruptivos, e ir encontra de aquellos que temen al cambio. Nuestra pasión por el diseño y nuestras habilidades para programar, combinadas con tu visión garantizará grandes resultados.",
       "services": "Servicios",
       "servicesSection": {
         "design": {

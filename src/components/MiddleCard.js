@@ -12,9 +12,9 @@ export const MiddleCard = ({
   return (
     <Link to={`/projects/${query}`}>
       <div
-        className={`overflow-hidden relative w-[520px] h-[400px] ${backgroundColor} flex justify-between items-center text-white px-12 py-[55px]`}
+        className={`overflow-hidden relative w-[320px] h-[calc(80vh-var(--navbar-height))] md:w-[520px] md:h-[400px] ${backgroundColor} flex flex-col md:flex-row justify-between items-center text-white px-[45px] py-[40px] md:px-12 md:py-[55px]`}
       >
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col w-full h-full">
           {/* header */}
           <div>
             <span className="uppercase tracking-[4px] text-xs">
@@ -29,13 +29,13 @@ export const MiddleCard = ({
             <span className="text-[34px] font-semibold">{cardSubtitle}</span>
           </div>
           {/* footer */}
-          <div className="flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-2">
             <span>Ver más</span>
             <ChevronRightIcon className="h-6" />
           </div>
         </div>
 
-        <div className="flex absolute -right-14 items-center justify-center">
+        <div className="flex md:absolute md:-right-14 items-center justify-center">
           <div className="w-72 h-72 flex items-center justify-center">
             <img className="w-full" src={image} alt={cardTitle} />
           </div>

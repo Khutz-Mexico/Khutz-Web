@@ -15,16 +15,10 @@ const Body = () => {
           <p>{t('home.body.helpYou')}</p>
         </div>
         <div className="text-lg font-light">
-          <p>{t('home.body.paragraph1.line1')}</p>
-          <p>{t('home.body.paragraph1.line2')}</p>
-          <p>{t('home.body.paragraph1.line3')}</p>
+          <p>{t('home.body.paragraph1')}</p>
         </div>
         <div className="text-lg font-light">
-          <p>{t('home.body.paragraph2.line1')}</p>
-          <p>{t('home.body.paragraph2.line2')}</p>
-          <p>{t('home.body.paragraph2.line3')}</p>
-          <p>{t('home.body.paragraph2.line4')}</p>
-          <p>{t('home.body.paragraph2.line5')}</p>
+          <p>{t('home.body.paragraph2')}</p>
         </div>
         <div className="w-[200px]">
           <Button rightArrow left>
