@@ -11,7 +11,7 @@ export const MenuPopup = ({ onClose }) => {
   useClickOutside(menuRef, onClose);
 
   return (
-    <div
+    <nav
       className="w-[520px] h-screen fixed right-0 top-0 bg-[#1B212C] px-[100px] py-[110px]"
       ref={menuRef}
     >
@@ -54,6 +54,6 @@ export const MenuPopup = ({ onClose }) => {
           <li className="text-white">Dribbble</li>
         </a>
       </ul>
-    </div>
+    </nav>
   );
 };
