@@ -10,7 +10,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 export const ProjectDetailsScreen = () => {
   const params = useParams();
-  const linePath = '/assets/line.svg';
+  const linePath = '/assets/line2.svg';
   const project = projects.find((x) => x.query === params.query);
   const {
     title,
@@ -33,7 +33,7 @@ export const ProjectDetailsScreen = () => {
   return (
     <div>
       {/* banner */}
-      <div className="flex justify-between items-start px-6 py-32 md:px-[100px] lg:px-[250px] md:py-[160px] h-[calc(100vh-var(--navbar-height))]">
+      <div className="relative flex justify-between items-start px-6 py-32 md:px-[100px] lg:px-[250px] md:py-[160px] h-[calc(100vh-var(--navbar-height))]">
         <img
           src={linePath}
           alt="line-path"

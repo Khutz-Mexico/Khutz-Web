@@ -7,9 +7,9 @@ export const projects = [
     backgroundColor: 'bg-[#F2F5F6]',
     query: 'onlyhomestulum',
     img: '/assets/projects/onlyhomes.png',
-    slogan: 'This is a slogan',
+    slogan: 'Un hogar en la naturaleza',
     description:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
+      'Only Homes Tulum es una agencia inmobiliaria enfocada a ayudar a personas interesadas en adquirir unicamente casas en el caribe mexicano. ',
     resultTitle: 'This is a Title',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
