@@ -16,6 +16,7 @@ export const ProjectDetailsScreen = () => {
     title,
     subtitle,
     textColor,
+    bgButton,
     img,
     slogan,
     description,
@@ -44,10 +45,10 @@ export const ProjectDetailsScreen = () => {
             caso de estudio
           </span>
           <div className="-space-y-5 pb-[50px]">
-            <h1 className="text-[50px] md:text-[55px] font-bold">{title}</h1>
-            <h2 className={`${textColor} text-[50px] md:text-[55px] font-bold`}>
-              {subtitle}
-            </h2>
+            <h1 className={`${textColor} text-[50px] md:text-[55px] font-bold`}>
+              {title}
+            </h1>
+            <h2 className="text-[50px] md:text-[55px] font-bold">{subtitle}</h2>
           </div>
 
           <div className="w-48 md:w-56">
@@ -127,11 +128,15 @@ export const ProjectDetailsScreen = () => {
 
       {/* Big card */}
       <div className="flex justify-between items-center h-screen w-full bg-[#f9f9f9] px-[140px]">
-        <div className="w-16 h-16 bg-blue-500 flex justify-center items-center">
+        <div
+          className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+        >
           <ArrowLeftIcon className="h-5 fill-white" />
         </div>
         <BigCard />
-        <div className="w-16 h-16 bg-blue-500 flex justify-center items-center">
+        <div
+          className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+        >
           <ArrowRightIcon className="h-5 fill-white" />
         </div>
       </div>

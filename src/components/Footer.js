@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="w-full h-full flex justify-between items-center font-light">
         <span>© 2022 Khutz México - All rights reserved</span>
         {/* social icons */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex">
           <a
             href="https://www.instagram.com/khutzmexico/"
             target="_blank"
             rel="noreferrer"
           >
-            <BsInstagram className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
+            <BsInstagram className="text-xl fill-[#909090] hover:fill-[var(--primaryColor)]" />
           </a>
         </div>
       </div>
