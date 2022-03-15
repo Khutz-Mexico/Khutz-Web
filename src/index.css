@@ -13,6 +13,8 @@
   --tertiaryColor: #aaaaaa;
   --tertiaryColorDark: #aaaaaa;
   --fourthColor: #f64b29;
+  --quaternaryColor: #909090;
+  --quaternaryColorDark: #d9d9d9;
 }
 
 * {
@@ -33,6 +35,9 @@ body {
   }
   .tertiaryColor {
     @apply text-[color:var(--tertiaryColor)] dark:text-[color:var(--tertiaryColorDark)];
+  }
+  .quaternaryColor {
+    @apply text-[color:var(--quaternaryColor)] dark:text-[color:var(--quaternaryColorDark)];
   }
   .filled {
     @apply bg-[color:var(--primaryColor)] dark:bg-[color:var(--primaryColorDark)];

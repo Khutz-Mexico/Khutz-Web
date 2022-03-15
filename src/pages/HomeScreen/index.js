@@ -14,9 +14,7 @@ export const HomeScreen = () => {
       <RecentWork />
       <WorkToghether />
       <Footer />
-      <div className="fixed left-6 md:left-[40px] top-[calc(50%-100px)]">
-        <Social />
-      </div>
+      <Social />
     </div>
   );
 };
