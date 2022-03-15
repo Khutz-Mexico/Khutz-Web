@@ -6,7 +6,7 @@ const WorkToghether = () => {
 
   return (
     <div className="px-6 screen-height flex flex-col justify-center items-center">
-      <p className="tertiaryColor text-sm font-semibold">
+      <p className="uppercase tracking-[4px] text-xs opacity-60 text-gray-700 font-semibold">
         {t('home.recentWork.likeOurWork')}
       </p>
       <div className="text-center pt-7">

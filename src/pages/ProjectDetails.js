@@ -2,6 +2,11 @@ import { useParams } from 'react-router-dom';
 import Button from 'components/Button';
 import { SmallCard } from 'components/SmallCard';
 import { projects } from 'data/database';
+import Footer from 'components/Footer';
+import RecentWork from './HomeScreen/RecentWork';
+import WorkToghether from './HomeScreen/WorkToghether';
+import BigCard from 'components/BigCard';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 export const ProjectDetailsScreen = () => {
   const params = useParams();
@@ -31,7 +36,7 @@ export const ProjectDetailsScreen = () => {
         <img
           src={linePath}
           alt="line-path"
-          className="hidden md:flex absolute right-0 top-0 -z-10"
+          className="hidden md:flex absolute right-0 top-0 w-full -z-10"
         />
 
         <div>
@@ -119,6 +124,25 @@ export const ProjectDetailsScreen = () => {
         <h3 className="text-3xl font-bold mb-[25px] mt-4">{resultTitle}</h3>
         <p className="text-lg font-light">{resultContent}</p>
       </div>
+
+      {/* Big card */}
+      <div className="flex justify-between items-center h-screen w-full bg-[#f9f9f9] px-[140px]">
+        <div className="w-16 h-16 bg-blue-500 flex justify-center items-center">
+          <ArrowLeftIcon className="h-5 fill-white" />
+        </div>
+        <BigCard />
+        <div className="w-16 h-16 bg-blue-500 flex justify-center items-center">
+          <ArrowRightIcon className="h-5 fill-white" />
+        </div>
+      </div>
+      {/* other projects */}
+      <div className="pt-[110px]">
+        <RecentWork />
+      </div>
+      {/* Work together */}
+      <WorkToghether />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
