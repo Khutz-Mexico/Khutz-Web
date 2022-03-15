@@ -52,5 +52,9 @@
       "quote": "Quote",
       "contact": "Contact"
     }
+  },
+  "servicesScreen": {
+    "title": "Services",
+    "subtitle": "WHAT DO WE DO?"
   }
 }

@@ -52,5 +52,9 @@
       "quote": "Cotizar",
       "contact": "Contacto"
     }
+  },
+  "servicesScreen": {
+    "title": "Servicios",
+    "subtitle": "¿QUÉ HACEMOS?"
   }
 }
