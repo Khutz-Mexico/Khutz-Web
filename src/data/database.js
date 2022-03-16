@@ -120,3 +120,30 @@ export const projects = [
     url: 'bellepool.com',
   },
 ];
+
+export const services = [
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+  {
+    title: 'DISEÑO WEB (UX/UI)',
+    text: 'Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital.',
+  },
+];

@@ -4,11 +4,13 @@ import { XIcon, MenuAlt4Icon } from '@heroicons/react/solid';
 import { MenuPopup } from 'components/MenuPopup';
 import { MovilPopup } from 'components/MovilPopup';
 import LanguagePicker from './LanguagePicker';
+import { DIFFERENT_COLOR_PATHS } from './constants';
 
 export const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuMovilOpen, setMenuMovilOpen] = useState(false);
+  const hasDifferentColor = DIFFERENT_COLOR_PATHS.includes(location.pathname);
 
   const logoPath = '/assets/logo.svg';
 
@@ -28,7 +30,11 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="bg-white sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]">
+      <header
+        className={`${
+          hasDifferentColor ? 'filled2' : 'bg-white'
+        } sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]`}
+      >
         {/* Left side */}
         <div className="hidden md:flex w-[200px] items-center">
           {/* <DropDownMenu /> */}

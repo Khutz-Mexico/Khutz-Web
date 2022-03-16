@@ -40,7 +40,10 @@ body {
     @apply text-[color:var(--quaternaryColor)] dark:text-[color:var(--quaternaryColorDark)];
   }
   .filled {
-    @apply bg-[color:var(--primaryColor)] dark:bg-[color:var(--primaryColorDark)];
+    @apply bg-white dark:bg-[#3C4657];
+  }
+  .filled2 {
+    @apply bg-[#F2F2F2] dark:bg-[#1B212C];
   }
 }
 
