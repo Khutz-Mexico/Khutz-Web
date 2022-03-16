@@ -6,14 +6,22 @@ import RecentWork from './HomeScreen/RecentWork';
 import WorkToghether from './HomeScreen/WorkToghether';
 import Footer from 'components/Footer';
 
-export const ServicesScreen = () => {
+const ServicesList = () => {
   const { t } = useTranslation();
   const services = t('servicesScreen.services', { returnObjects: true });
 
+  return services.map((service, i) => (
+    <ServiceCard key={i} title={service.title} text={service.text} />
+  ));
+};
+
+export const ServicesScreen = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <div className="screen-height filled2 pl-[100px] pt-[100px] pr-[139px]">
-        <div className="pl-[134px]">
+      <div className="min-screen-height h-fit filled2 pl-[50px] md:pl-[100px] pt-[100px] pr-[70px] md:pr-[139px] pb-[50px]">
+        <div className="pl-0 md:pl-[134px]">
           <p className="quaternaryColor text-xs font-semibold">
             {t('servicesScreen.subtitle')}
           </p>
@@ -21,10 +29,11 @@ export const ServicesScreen = () => {
             {t('servicesScreen.title')}
           </h1>
         </div>
-        <div className="grid grid-rows-2 grid-cols-3 gap-x-[42px] gap-y-[50px] mt-[104px]">
-          {services.map((service, i) => (
-            <ServiceCard title={service.title} text={service.text} key={i} />
-          ))}
+        <div className="md:hidden flex flex-col space-y-[50px] mt-[104px]">
+          <ServicesList />
+        </div>
+        <div className="hidden md:grid grid-rows-6 md:grid-rows-2 grid-cols-1 md:grid-cols-3 max-h-[500px] gap-x-[42px] gap-y-[50px] mt-[104px]">
+          <ServicesList />
         </div>
       </div>
 
