@@ -20,7 +20,11 @@ export const ServicesScreen = () => {
         </div>
         <div className="grid grid-rows-2 grid-cols-3 gap-x-[42px] gap-y-[50px] mt-[104px]">
           {services.map((service, i) => (
-            <ServiceCard title={service.title} text={service.text} key={i} />
+            <ServiceCard
+              title={t(`servicesScreen.services.${i}.title`)}
+              text={t(`servicesScreen.services.${i}.text`)}
+              key={i}
+            />
           ))}
         </div>
         <Social />
