@@ -20,7 +20,7 @@ export const ServicesScreen = () => {
 
   return (
     <div>
-      <div className="min-screen-height h-fit filled2 pl-[50px] md:pl-[100px] pt-[100px] pr-[70px] md:pr-[139px] pb-[50px]">
+      <div className="h-fit filled2 pl-[50px] md:pl-[100px] pt-[100px] pr-[70px] md:pr-[139px] pb-[50px]">
         <div className="pl-0 md:pl-[134px]">
           <p className="quaternaryColor text-xs font-semibold">
             {t('servicesScreen.subtitle')}
