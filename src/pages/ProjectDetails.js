@@ -22,7 +22,6 @@ export const ProjectDetailsScreen = () => {
     description,
     resultTitle,
     resultContent,
-    resultContent2,
     services,
     location,
     url,
@@ -87,7 +86,7 @@ export const ProjectDetailsScreen = () => {
 
           <div>
             <span className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
-              ubicacion
+              ubicación
             </span>
             <p className="pb-6 pt-1 font-semibold">{location}</p>
             <hr />
@@ -112,8 +111,8 @@ export const ProjectDetailsScreen = () => {
       {/* image */}
       <div className="flex overflow-scroll scrollbar-hide py-[100px] md:py-[140px]">
         <div className="flex space-x-10 first-of-type:ml-6 last-of-type:mr-6 md:first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
-          {projects?.map(({ imagesSmallSlider }, i) => (
-            <SmallCard key={i} images={imagesSmallSlider} altimage="hola" />
+          {project.imagesSmallSlider.map((image, i) => (
+            <SmallCard key={i} imageSrc={image} imageAlt={title} />
           ))}
         </div>
       </div>
@@ -124,10 +123,9 @@ export const ProjectDetailsScreen = () => {
           El resultado
         </span>
         <h3 className="text-3xl font-bold mb-[25px] mt-4">{resultTitle}</h3>
-        <div className="space-y-7">
-          <p className="text-lg font-light">{resultContent}</p>
-          <p className="text-lg font-light">{resultContent2}</p>
-        </div>
+        <p className="text-lg font-light whitespace-pre-line">
+          {resultContent}
+        </p>
       </div>
 
       {/* Big card */}
