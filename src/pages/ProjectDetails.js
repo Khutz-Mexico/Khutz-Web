@@ -22,6 +22,7 @@ export const ProjectDetailsScreen = () => {
     description,
     resultTitle,
     resultContent,
+    resultContent2,
     services,
     location,
     url,
@@ -112,7 +113,7 @@ export const ProjectDetailsScreen = () => {
       <div className="flex overflow-scroll scrollbar-hide py-[100px] md:py-[140px]">
         <div className="flex space-x-10 first-of-type:ml-6 last-of-type:mr-6 md:first-of-type:ml-[140px] md:last-of-type:mr-[40px]">
           {projects?.map(({ imagesSmallSlider }, i) => (
-            <SmallCard key={i} images={imagesSmallSlider} />
+            <SmallCard key={i} images={imagesSmallSlider} altimage="hola" />
           ))}
         </div>
       </div>
@@ -123,7 +124,10 @@ export const ProjectDetailsScreen = () => {
           El resultado
         </span>
         <h3 className="text-3xl font-bold mb-[25px] mt-4">{resultTitle}</h3>
-        <p className="text-lg font-light">{resultContent}</p>
+        <div className="space-y-7">
+          <p className="text-lg font-light">{resultContent}</p>
+          <p className="text-lg font-light">{resultContent2}</p>
+        </div>
       </div>
 
       {/* Big card */}

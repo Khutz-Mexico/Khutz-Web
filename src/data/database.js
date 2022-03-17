@@ -7,13 +7,23 @@ export const projects = [
     backgroundColor: 'bg-[#F2F5F6]',
     query: 'onlyhomestulum',
     img: '/assets/projects/onlyhomes.png',
-    slogan: 'Un hogar en la naturaleza',
+    slogan: 'No apartments no condos just homes',
     description:
-      'Only Homes Tulum es una agencia inmobiliaria enfocada a ayudar a personas interesadas en adquirir unicamente casas en el caribe mexicano. ',
-    resultTitle: 'This is a Title',
+      'Only Homes Tulum es una agencia inmobiliaria enfocada unicamente en la venta de casas con un concepto chic y ecológico en el caribe mexicano. Nuestra participación en este proyecto fue desde la creación del diseño UX/UI hasta el desarrollo del sitio web. Los objetivos principales del proyecto fuerón mantener un diseño limpio y moderno que evocará a la naturaleza y al mismo tiempo que fuera facil y barato de mantener.',
+    resultTitle: 'Optimización de los recursos económicos',
     resultContent:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
+      'Cuando comenzamos este proyecto teniamos en claro 2 cosas, que el presupuesto era limitado y que el contenido debía ser fácil de actulizar. Inmediatamente cuando entendimos los recursos con los que disponiamos y los objetivos a alcanzar, descartamos la opción de implementar un sistema totalmente a la medida con alguna tecnología MERNStack o similar, ya que esta solución nos sacaba del presupuesto establecido por el cliente, de manera que decidimos desarrollar el sitio web en Wordpress un CMS de bajo costo y que al mismo tiempo permite la gestión de contenido de manera fácil.',
+    resultContent2:
+      'Si bien es cierto que usar Wordpress puede generar limitantes y desventajas, esto no impactaba de manera significativa en la satisfacción de los requerimientos y necesidades. El diseño UX/UI se creo en Adobe xD y el sitio web se desarrollo en Wordpress usando como base un template',
+    imagesSmallSlider: [
+      '/assets/clients/onlyhomes/onlyhomes-1.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-2.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-3.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-4.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-5.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-6.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-7.jpg',
+    ],
     imagesBigSlider: '',
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
@@ -50,7 +60,7 @@ export const projects = [
     slogan: 'Inversión segura',
     description:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    resultTitle: 'This is a Title',
+    resultTitle: 'Ejecución del proyecto',
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
