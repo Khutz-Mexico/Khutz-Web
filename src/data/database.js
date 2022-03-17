@@ -22,7 +22,15 @@ export const projects = [
       '/assets/clients/onlyhomes/onlyhomes-6.jpg',
       '/assets/clients/onlyhomes/onlyhomes-7.jpg',
     ],
-    imagesBigSlider: '',
+    imagesBigSlider: [
+      '/assets/clients/onlyhomes/onlyhomes-1.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-2.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-3.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-4.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-5.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-6.jpg',
+      '/assets/clients/onlyhomes/onlyhomes-7.jpg',
+    ],
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
     url: 'onlyhomestulum.com',
@@ -42,7 +50,7 @@ export const projects = [
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: '',
+    imagesBigSlider: [''],
     services: 'Desarrollo web y branding',
     location: 'Tulum Quintana Roo, México',
     url: 'boatabroad.com',
@@ -62,7 +70,7 @@ export const projects = [
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: '',
+    imagesBigSlider: [''],
     services: 'Desarrollo web y branding',
     location: 'Tulum Quintana Roo, México',
     url: 'aurarealestate.mx',
@@ -82,7 +90,7 @@ export const projects = [
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: '',
+    imagesBigSlider: [''],
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
     url: 'calidomx.com',
@@ -102,7 +110,7 @@ export const projects = [
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: '',
+    imagesBigSlider: [''],
     services: 'Desarrollo web y branding',
     location: 'Puebla, México',
     url: 'lexarconsultores.com',
@@ -122,7 +130,7 @@ export const projects = [
     resultContent:
       'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
     imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: '',
+    imagesBigSlider: [''],
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
     url: 'bellepool.com',

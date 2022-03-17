@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Button from 'components/Button';
 import { SmallCard } from 'components/SmallCard';
@@ -26,6 +27,15 @@ export const ProjectDetailsScreen = () => {
     location,
     url,
   } = project;
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const handleChangeSelectedImage = (offset) => {
+    const newIndex =
+      (selectedImageIndex + offset) % project.imagesBigSlider.length;
+    setSelectedImageIndex(
+      newIndex === -1 ? project.imagesBigSlider.length - 1 : newIndex,
+    );
+  };
 
   console.log('project', project);
   console.log('img', img);
@@ -132,12 +142,14 @@ export const ProjectDetailsScreen = () => {
       <div className="flex justify-between items-center h-screen w-full bg-[#f9f9f9] px-[140px]">
         <div
           className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          onClick={() => handleChangeSelectedImage(-1)}
         >
           <ArrowLeftIcon className="h-5 fill-white" />
         </div>
-        <BigCard />
+        <BigCard imageSrc={project.imagesBigSlider[selectedImageIndex]} />
         <div
           className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          onClick={() => handleChangeSelectedImage(1)}
         >
           <ArrowRightIcon className="h-5 fill-white" />
         </div>

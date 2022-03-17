@@ -1,10 +1,11 @@
 import React from 'react';
 
-const BigCard = () => {
+const BigCard = ({ imageSrc }) => {
   return (
-    <div className="w-[860px] h-[460px] flex items-center justify-center bg-slate-300">
-      <h1>Image space</h1>
-    </div>
+    <img
+      className="w-[860px] h-[460px] flex items-center justify-center bg-slate-300"
+      src={imageSrc}
+    />
   );
 };
 
