@@ -29,11 +29,13 @@ export const ServicesScreen = () => {
             {t('servicesScreen.title')}
           </h1>
         </div>
-        <div className="md:hidden flex flex-col space-y-[50px] mt-[104px]">
-          <ServicesList />
-        </div>
-        <div className="hidden md:grid grid-rows-6 md:grid-rows-2 grid-cols-1 md:grid-cols-3 max-h-[500px] gap-x-[42px] gap-y-[50px] mt-[104px]">
-          <ServicesList />
+        <div className="my-[60px] md:my-[105px]">
+          <div className="md:hidden flex flex-col space-y-7 md:space-y-[50px]">
+            <ServicesList />
+          </div>
+          <div className="hidden md:grid grid-rows-6 md:grid-rows-2 grid-cols-1 md:grid-cols-3 max-h-[500px] gap-x-[42px] gap-y-[50px] mt-[104px]">
+            <ServicesList />
+          </div>
         </div>
       </div>
 

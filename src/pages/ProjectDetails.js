@@ -17,7 +17,6 @@ export const ProjectDetailsScreen = () => {
     title,
     subtitle,
     textColor,
-    bgButton,
     img,
     slogan,
     description,
@@ -141,14 +140,16 @@ export const ProjectDetailsScreen = () => {
       {/* Big card */}
       <div className="flex justify-between items-center h-screen w-full bg-[#f9f9f9] px-[140px]">
         <div
-          className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          // className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          className="w-16 h-16 bg-[#1b212c] flex justify-center items-center cursor-pointer"
           onClick={() => handleChangeSelectedImage(-1)}
         >
           <ArrowLeftIcon className="h-5 fill-white" />
         </div>
         <BigCard imageSrc={project.imagesBigSlider[selectedImageIndex]} />
         <div
-          className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          // className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
+          className="w-16 h-16 bg-[#1b212c] flex justify-center items-center cursor-pointer"
           onClick={() => handleChangeSelectedImage(1)}
         >
           <ArrowRightIcon className="h-5 fill-white" />
