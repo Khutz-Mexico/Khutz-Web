@@ -137,11 +137,19 @@ export const ProjectDetailsScreen = () => {
         </p>
       </div>
 
+      <div className="flex md:hidden overflow-scroll scrollbar-hide">
+        <div className="flex flex-col">
+          {project.imagesBigSlider.map((image, i) => (
+            <BigCard key={i} imageSrc={image} imageAlt={title} />
+          ))}
+        </div>
+      </div>
+
       {/* Big card */}
-      <div className="flex justify-between items-center h-[500px] md:h-screen w-full bg-[#f9f9f9] md:px-[140px]">
+      <div className="hidden md:flex justify-between items-center h-[350px] md:h-screen w-full bg-[#f9f9f9] md:px-[140px]">
         <div
           // className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
-          className="w-16 h-16 bg-[#1b212c] flex justify-center items-center cursor-pointer"
+          className="w-16 h-16 bg-[#1b212c] hidden md:flex justify-center items-center cursor-pointer"
           onClick={() => handleChangeSelectedImage(-1)}
         >
           <ArrowLeftIcon className="h-5 fill-white" />
@@ -149,12 +157,13 @@ export const ProjectDetailsScreen = () => {
         <BigCard imageSrc={project.imagesBigSlider[selectedImageIndex]} />
         <div
           // className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
-          className="w-16 h-16 bg-[#1b212c] flex justify-center items-center cursor-pointer"
+          className="w-16 h-16 bg-[#1b212c] hidden md:flex justify-center items-center cursor-pointer"
           onClick={() => handleChangeSelectedImage(1)}
         >
           <ArrowRightIcon className="h-5 fill-white" />
         </div>
       </div>
+
       {/* other projects */}
       <div className="pt-[110px]">
         <RecentWork />
