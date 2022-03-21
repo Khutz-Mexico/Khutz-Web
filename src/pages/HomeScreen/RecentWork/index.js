@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import { projects } from 'data/database';
 import { MiddleCard } from 'components/MiddleCard';
 import Button from 'components/Button';
+import { getRandomNumber } from './utils';
 
 const RecentWork = () => {
   const { t } = useTranslation();
-  const filterProjects = projects.slice(0, 2);
+  const randomIndex1 = getRandomNumber(0, projects.length - 1);
+  const randomIndex2 = getRandomNumber(0, projects.length - 1, randomIndex1);
+  const filteredProjects = [projects[randomIndex1], projects[randomIndex2]];
 
   return (
     <div className="pt-12 md:pt-0 w-full md:screen-height flex flex-col justify-center items-center overflow-hidden">
@@ -15,7 +18,7 @@ const RecentWork = () => {
       {/* cards */}
       <div className="justify-center flex flex-col md:flex-row md:overflow-scroll scrollbar-hide w-full">
         <div className="flex flex-col md:flex-row md:w-full items-center md:justify-center pt-12 md:pt-[80px] space-y-10 md:space-y-0 md:space-x-14 first-of-type:pl-6 last-of-type:pr-6">
-          {filterProjects?.map(
+          {filteredProjects?.map(
             ({ title, subtitle, textColor, img, backgroundColor, query }) => (
               <MiddleCard
                 key={query}
