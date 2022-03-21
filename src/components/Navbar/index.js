@@ -33,7 +33,7 @@ export const Navbar = () => {
       <header
         className={`${
           hasDifferentColor ? 'filled2' : 'bg-white'
-        } sticky top-0 z-50 h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]`}
+        } sticky top-0 z-50 h-[var(--movil-navbar-height)] md:h-[var(--navbar-height)] flex items-center justify-between px-8 md:px-[40px]`}
       >
         {/* Left side */}
         <div className="hidden md:flex w-[200px] items-center">

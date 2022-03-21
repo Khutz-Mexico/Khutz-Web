@@ -138,7 +138,7 @@ export const ProjectDetailsScreen = () => {
       </div>
 
       {/* Big card */}
-      <div className="flex justify-between items-center h-screen w-full bg-[#f9f9f9] px-[140px]">
+      <div className="flex justify-between items-center h-[500px] md:h-screen w-full bg-[#f9f9f9] md:px-[140px]">
         <div
           // className={`w-16 h-16 ${bgButton} flex justify-center items-center`}
           className="w-16 h-16 bg-[#1b212c] flex justify-center items-center cursor-pointer"

@@ -6,6 +6,7 @@
 
 :root {
   --navbar-height: 95px;
+  --movil-navbar-height: 70px;
   --primaryColor: #1b212c;
   --primaryColorDark: #ffffff;
   --secondaryColor: #a58861;
