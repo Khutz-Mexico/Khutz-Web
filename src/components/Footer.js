@@ -1,21 +1,10 @@
 import React from 'react';
-import { BsInstagram } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer className="px-8 md:px-[40px] w-full h-[100px]">
-      <div className="w-full h-full flex justify-between items-center font-light">
-        <span>© 2022 Khutz México - All rights reserved</span>
-        {/* social icons */}
-        <div className="hidden md:flex">
-          <a
-            href="https://www.instagram.com/khutzmexico/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsInstagram className="text-xl fill-[#909090] hover:fill-[var(--primaryColor)]" />
-          </a>
-        </div>
+    <footer className="px-8 md:px-[40px] w-full h-[80px]">
+      <div className="w-full h-full flex justify-end items-center font-light">
+        <p>© 2022 Khutz México - All rights reserved</p>
       </div>
     </footer>
   );
