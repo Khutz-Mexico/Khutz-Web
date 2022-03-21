@@ -58,28 +58,28 @@
     "subtitle": "¿QUÉ HACEMOS?",
     "services": [
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "DISEÑO UX/UI",
+        "text": "Te ayudamos con la creación de tu diseño UX/UI, documentando todo el sistema de diseño para la fase de desarrollo."
       },
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "DESARROLLO WEB",
+        "text": "Llevamos a la realidad tu diseño UX/UI, desde la creación de CMS hasta desarrollos totalmente a la medida."
       },
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "APP´s",
+        "text": "Te ayudamos con el desarrollo de tu APP móvil. Trabajamos con REACT native para aplicaciones multiplataforma."
       },
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "ECOMMERCE",
+        "text": "Si lo que necesitas es vender por internet, nuestros servicios cubren el desarrollo de tiendas en linea."
       },
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "MANTENIMIENTO Y MIGRACION",
+        "text": "Si ya tienes un sitio web y lo que necesitas es monitorearlo o deseas migrarlo a nuevas tecnologías podemos ayudarte."
       },
       {
-        "title": "DISEÑO WEB (UX/UI)",
-        "text": "Diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital."
+        "title": "SEO & ANALITICA WEB",
+        "text": "Te ayudamos a estructurar correctamente tu sitio web y optimizar la búsqueda de tu contenido en los buscadores"
       }
     ]
   }

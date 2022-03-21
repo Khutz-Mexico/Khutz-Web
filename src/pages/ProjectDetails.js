@@ -11,7 +11,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 export const ProjectDetailsScreen = () => {
   const params = useParams();
-  const linePath = '/assets/line2.svg';
+  const linePath = '/assets/line.svg';
   const project = projects.find((x) => x.query === params.query);
   const {
     title,

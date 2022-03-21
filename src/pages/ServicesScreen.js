@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Social from 'components/Social';
 import ServiceCard from 'components/ServiceCard';
 import RecentWork from './HomeScreen/RecentWork';
 import WorkToghether from './HomeScreen/WorkToghether';
@@ -20,9 +19,9 @@ export const ServicesScreen = () => {
 
   return (
     <div>
-      <div className="h-fit filled2 pl-[50px] md:pl-[100px] pt-[100px] pr-[70px] md:pr-[139px] pb-[50px]">
-        <div className="pl-0 md:pl-[134px]">
-          <p className="quaternaryColor text-xs font-semibold">
+      <div className="h-fit filled2 px-[50px] md:px-[140px] pt-[100px] pb-[50px]">
+        <div className="pl-0 md:pl-[90px]">
+          <p className="uppercase tracking-[4px] text-xs opacity-60 text-gray-700">
             {t('servicesScreen.subtitle')}
           </p>
           <h1 className="text-[55px] font-semibold">
@@ -43,7 +42,6 @@ export const ServicesScreen = () => {
         <RecentWork />
       </div>
       <WorkToghether />
-      <Social />
       <Footer />
     </div>
   );
