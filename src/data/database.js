@@ -46,7 +46,7 @@ export const projects = [
       'Boatabroad es un marketplace que conecta propietarios de barcos con navegantes en busca de rentar un barco. Los objetivos principales del proyecto fuerón desarrollar un sistema totalmente a la medida, escalable y con una interfaz facil de utilizar.',
     resultTitle: 'Planeación y ejecución',
     resultContent:
-      'El reto más grande en este proyecto fue aterrizar la idea del cliente a un plan de trabajo real. Uno de los objetivos principales del proyecto fue crear las bases de un sistema que pudiera escalarse en el tiempo conforme el MVP fuera validandose en el mercado, debido a esto sabiamos que teniamos que tener el control total en cada uno de los bloques que conformasen el desarrollo. \n\n Nuestro trabajo abarco desde el diseño UX/UI hasta la fase de desarrollo y despliegue. El sitio web se desarrollo usando MERN stack (MongoDB, Express.js, React y Node.js), también se desarrollo un dashboard totalmente a la medida donde el administrador valida los anuncios sin necesidad de tocar una linea de código.',
+      'El reto más grande en este proyecto fue aterrizar la idea del cliente a un plan de trabajo real. Uno de los objetivos principales del proyecto fue crear las bases de un sistema que pudiera escalarse en el tiempo conforme el MVP fuera validandose en el mercado, debido a esto sabiamos que teniamos que tener el control total en cada uno de los bloques que conformasen el desarrollo. \n\n Nuestro trabajo abarco desde el branding hasta la fase de desarrollo y despliegue del sitio web. El sitio web se desarrollo usando MERN stack (MongoDB, Express.js, React y Node.js), también se desarrollo un dashboard totalmente a la medida donde el administrador valida los anuncios sin necesidad de tocar una linea de código.',
     imagesSmallSlider: [
       '/assets/clients/boatabroad/boatabroad-8.jpg',
       '/assets/clients/boatabroad/boatabroad-9.jpg',
@@ -77,12 +77,12 @@ export const projects = [
     backgroundColor: 'bg-[#F2F2F2]',
     query: 'aura',
     img: '/assets/projects/aura.png',
-    slogan: 'Inversión segura',
+    slogan: 'Find properties on the best beaches in México',
     description:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    resultTitle: 'Ejecución del proyecto',
+      'Aura Real Estate es una agencia inmobiliaria que promueve propiedades en las mejores playas de México. Cuando fuimos contratados el objetivo era claro, su sitio web debia ser sencillo, pero que transmitiera seguridad y elegancia en cada rincón, además de poder ser gestionado el contenido de manera fácil y rápida.',
+    resultTitle: 'Un buen diseño',
     resultContent:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
+      'Nuestro trabajo en este proyecto abarco desde branding, hasta el desarrollo del sitio web. El sitio web para Aura fue desarrollado en el CMS open source Wordpress y un template de base, el trabajo sin duda fue laborioso ya que tuvimos que vaciar mucha información, editar fotos y crear el copywrite.',
     imagesSmallSlider: [
       '/assets/clients/aura/aura-6.jpg',
       '/assets/clients/aura/aura-7.jpg',
