@@ -19,7 +19,7 @@ export const MenuPopup = ({ onClose }) => {
         NAVIGATION
       </span>
       <hr className="text-white opacity-40 mt-6" />
-      <ul className="py-10">
+      <ul className="pt-10 pb-24">
         {LINKS.map((link) => {
           const isSelected = link.path === location.pathname;
           return (
