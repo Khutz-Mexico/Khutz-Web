@@ -12,10 +12,6 @@ export const LINKS = [
     path: '/services',
   },
   {
-    translationKey: 'menuPopUp.sections.quote',
-    path: '/quote',
-  },
-  {
     translationKey: 'menuPopUp.sections.contact',
     path: '/contact',
   },
