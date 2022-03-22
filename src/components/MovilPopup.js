@@ -29,11 +29,6 @@ export const MovilPopup = ({ onClose }) => {
           </NavLink>
         </li>
         <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
-          <NavLink onClick={onClose} to="/quote">
-            Cotizar
-          </NavLink>
-        </li>
-        <li className="text-white text-[20px] w-full hover:bg-slate-700 rounded-r-xl pl-8">
           <NavLink onClick={onClose} to="/contact">
             Contacto
           </NavLink>
