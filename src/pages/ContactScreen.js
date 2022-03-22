@@ -11,7 +11,7 @@ export const ContactScreen = () => {
         </h1>
 
         {/* columns */}
-        <div className="w-full flex flex-col md:flex-row justify-center items-start space-y-28 pt-[130px]">
+        <div className="w-full flex flex-col md:flex-row justify-center items-start space-y-28 md:space-y-0 pt-[130px]">
           {/* left */}
           <div className="w-full md:w-2/3 flex justify-start">
             <form className="w-full" action="">
@@ -132,7 +132,7 @@ export const ContactScreen = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900 hover:bg-[#f64b29] w-60 h-60 rounded-full flex justify-center items-center">
+            <div className="bg-gray-900 hover:bg-[#f64b29] w-60 h-60 rounded-full flex justify-center items-center cursor-pointer">
               <span className="text-white">Send it</span>
             </div>
           </div>
