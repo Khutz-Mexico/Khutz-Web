@@ -169,10 +169,10 @@ export const projects = [
     img: '/assets/projects/bellepool.png',
     slogan: 'Albercas siempre bellas',
     description:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    resultTitle: 'Ejecución de ideas',
+      'Bellepool es una empresa dedicada a la construcción y mantenimiento de albercas. Nuestro trabajo en Bellepool consistio en diseñar y desarrollar su tienda online. Como requisito del cliente el sitio web debía desarrollarse en Wordpress y Woocommerce',
+    resultTitle: 'Desarrollo rápido',
     resultContent:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
+      'Cuando comenzamos este proyecto nuestro cliente requería tener listo su sitio web en pocos días, una de las grandes ventajas de desarrollar un sitio web sobre una arquitectura base como es el caso de Wordpress es la reducción de los tiempos de desarrollo. Cuando diseñamos este sitio web, queriamos transmitir una sensación de frescura que recordasé al agua evocando al concepto principal de la marca.',
     imagesSmallSlider: [
       '/assets/clients/bellepool/bellepool-1.jpg',
       '/assets/clients/bellepool/bellepool-2.jpg',

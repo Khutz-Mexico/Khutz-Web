@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from 'components/Button';
+import { NavLink } from 'react-router-dom';
 
 const WorkToghether = () => {
   const { t } = useTranslation();
@@ -21,9 +22,11 @@ const WorkToghether = () => {
         </span>
       </div>
       <div className="mt-[47px]">
-        <Button outlined rightArrow>
-          {t('home.recentWork.contact')}
-        </Button>
+        <NavLink to="/contact">
+          <Button outlined rightArrow>
+            {t('home.recentWork.contact')}
+          </Button>
+        </NavLink>
       </div>
     </div>
   );
