@@ -4,16 +4,16 @@ import React from 'react';
 export const ContactScreen = () => {
   return (
     <div>
-      <div className="px-[180px] py-[110px]">
+      <div className="px-8 md:px-[180px] py-[110px]">
         {/* Title */}
         <h1 className="text-[65px] font-semibold whitespace-pre-line leading-tight">
           {'Let’s start a \n project together'}
         </h1>
 
         {/* columns */}
-        <div className="w-full flex justify-center items-start pt-[130px]">
+        <div className="w-full flex flex-col md:flex-row justify-center items-start space-y-28 pt-[130px]">
           {/* left */}
-          <div className="w-2/3 flex justify-start">
+          <div className="w-full md:w-2/3 flex justify-start">
             <form className="w-full" action="">
               <div>
                 <hr className="bg-gray-600" />
@@ -24,7 +24,7 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
               </div>
@@ -38,7 +38,7 @@ export const ContactScreen = () => {
                   <input
                     type="email"
                     placeholder="info@khutz.com"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
               </div>
@@ -52,7 +52,7 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Khutz México"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
               </div>
@@ -66,7 +66,7 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Web design"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
               </div>
@@ -80,7 +80,7 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="$1,000 USD"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
               </div>
@@ -94,7 +94,7 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Hello Khutz, can you help me with"
-                    className="text-lg w-full font-light"
+                    className="text-lg w-full font-light outline-none"
                   />
                 </div>
                 <hr className="bg-gray-600" />
@@ -103,8 +103,8 @@ export const ContactScreen = () => {
           </div>
           {/* right */}
 
-          <div className="w-1/3 md:pl-[120px]">
-            <div className="space-y-12 pb-72">
+          <div className="w-full md:w-1/3 md:pl-[120px]">
+            <div className="space-y-12 pb-20 md:pb-72">
               <div className="space-y-2">
                 <h3 className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
                   Contact Details
