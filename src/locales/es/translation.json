@@ -1,4 +1,7 @@
 {
+  "footer": {
+    "copyright": "© 2022 Khutz México - Todos los derechos reservados"
+  },
   "home": {
     "presentation": {
       "title": {
@@ -84,6 +87,23 @@
     ]
   },
   "contactScreen": {
+    "letsGetStarted": "Empecemos un \n proyecto juntos",
+    "contactDetails": "Detalles de contacto",
+    "businessDetails": "Detalles del negocio",
+    "socialNetworks": "Redes sociales",
+    "sendIt": "Envíalo",
+    "fieldLabels": {
+      "name": "¿Cuál es tu nombre?",
+      "email": "¿Qué servicio estás buscando?",
+      "companyName": "Nombre de la empresa",
+      "service": "¿Qué servicio estás buscando?",
+      "budget": "¿Cuál es tu presupuesto?",
+      "message": "Tu mensaje"
+    },
+    "fieldPlaceholders": {
+      "name": "Juan Pérez",
+      "message": "Hola Khutz, me puedes ayudar con...?"
+    },
     "enterAValue": "Por favor completa el campo",
     "requestReceived": {
       "title": "Mensaje recibido",

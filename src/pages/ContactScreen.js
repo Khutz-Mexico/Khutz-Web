@@ -66,7 +66,7 @@ export const ContactScreen = () => {
       <div className="px-8 md:px-[180px] py-[110px]">
         {/* Title */}
         <h1 className="text-5xl md:text-[65px] font-semibold whitespace-pre-line leading-tight">
-          {'Let’s start a \n project together'}
+          {t('contactScreen.letsGetStarted')}
         </h1>
 
         {/* columns */}
@@ -78,11 +78,11 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What's your name?
+                    {t('contactScreen.fieldLabels.name')}
                   </h2>
                   <input
                     type="text"
-                    placeholder="John Doe"
+                    placeholder={t('contactScreen.fieldPlaceholders.name')}
                     onChange={(e) => handleChangeValue('name', e.target.value)}
                     className="text-lg w-full font-light outline-none"
                   />
@@ -93,7 +93,7 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What's your email?
+                    {t('contactScreen.fieldLabels.email')}
                   </h2>
                   <input
                     type="email"
@@ -108,7 +108,7 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    Company Name
+                    {t('contactScreen.fieldLabels.companyName')}
                   </h2>
                   <input
                     type="text"
@@ -125,7 +125,7 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What service are you looking for?
+                    {t('contactScreen.fieldLabels.service')}
                   </h2>
                   <input
                     type="text"
@@ -142,7 +142,7 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What is your budget?
+                    {t('contactScreen.fieldLabels.budget')}
                   </h2>
                   <input
                     type="text"
@@ -159,11 +159,11 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    Your message
+                    {t('contactScreen.fieldLabels.message')}
                   </h2>
                   <input
                     type="text"
-                    placeholder="Hello Khutz, can you help me with"
+                    placeholder={t('contactScreen.fieldPlaceholders.message')}
                     onChange={(e) =>
                       handleChangeValue('message', e.target.value)
                     }
@@ -180,7 +180,7 @@ export const ContactScreen = () => {
             <div className="space-y-12 pb-20 md:pb-72">
               <div className="space-y-2">
                 <h3 className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
-                  Contact Details
+                  {t('contactScreen.contactDetails')}
                 </h3>
                 <p className="text-[16px] font-medium">info@khutz.com</p>
                 <p className="text-[16px] font-medium">+52 222 162 7920</p>
@@ -188,7 +188,7 @@ export const ContactScreen = () => {
 
               <div className="space-y-2">
                 <h3 className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
-                  Business Details
+                  {t('contactScreen.businessDetails')}
                 </h3>
                 <p className="text-[16px] font-medium">CP. 72960</p>
                 <p className="text-[16px] font-medium">City: Puebla</p>
@@ -197,7 +197,7 @@ export const ContactScreen = () => {
 
               <div className="space-y-2">
                 <h3 className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
-                  Social
+                  {t('contactScreen.socialNetworks')}
                 </h3>
                 <p className="text-[16px] font-medium">Instagram</p>
                 <p className="text-[16px] font-medium">Dribbble</p>
@@ -209,7 +209,7 @@ export const ContactScreen = () => {
               className="bg-gray-900 hover:bg-[#f64b29] duration-300 w-60 h-60 rounded-full flex justify-center items-center cursor-pointer"
               onClick={handleSubmit}
             >
-              <span className="text-white">Send it</span>
+              <span className="text-white">{t('contactScreen.sendIt')}</span>
             </div>
           </div>
         </div>

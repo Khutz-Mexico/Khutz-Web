@@ -1,4 +1,7 @@
 {
+  "footer": {
+    "copyright": "© 2022 Khutz Mexico - All rights reserved"
+  },
   "home": {
     "presentation": {
       "title": {
@@ -84,6 +87,23 @@
     ]
   },
   "contactScreen": {
+    "letsGetStarted": "Let's start a \n project together",
+    "contactDetails": "Contact details",
+    "businessDetails": "Business details",
+    "socialNetworks": "Social",
+    "sendIt": "Send it",
+    "fieldLabels": {
+      "name": "What's your name?",
+      "email": "What service are you looking for?",
+      "companyName": "Company Name",
+      "service": "What service are you looking for?",
+      "budget": "What is your budget?",
+      "message": "Your message"
+    },
+    "fieldPlaceholders": {
+      "name": "John Doe",
+      "message": "Hello Khutz, can you help me with...?"
+    },
     "enterAValue": "Please enter a value for the field",
     "requestReceived": {
       "title": "Message received",
