@@ -4,11 +4,13 @@ import { useTranslation } from 'react-i18next';
 import Footer from 'components/Footer';
 import { createFormSubmission, getFormFields } from 'services/api/forms';
 import { validateFormSubmission } from 'utils/forms';
+import { useNavigate } from 'react-router-dom';
 
 const formCode = 'contact';
 
 export const ContactScreen = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [fields, setFields] = useState([]);
   const [data, setData] = useState({});
 
@@ -23,7 +25,11 @@ export const ContactScreen = () => {
     }
 
     createFormSubmission(formCode, data).finally(() => {
-      swal('Success', t('contactScreen.requestReceived'), 'success');
+      swal('Success', t('contactScreen.requestReceived'), 'success').finally(
+        () => {
+          navigate('/');
+        },
+      );
     });
   };
 
