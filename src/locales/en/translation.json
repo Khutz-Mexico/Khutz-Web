@@ -48,6 +48,8 @@
     }
   },
   "menuPopUp": {
+    "navigation": "NAVIGATION",
+    "socials": "SOCIALS",
     "sections": {
       "home": "Home",
       "portfolio": "Portfolio",

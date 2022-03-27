@@ -16,7 +16,7 @@ export const MenuPopup = ({ onClose }) => {
       ref={menuRef}
     >
       <span className="text-xs text-white opacity-40 font-light">
-        NAVIGATION
+        {t('menuPopUp.navigation')}
       </span>
       <hr className="text-white opacity-40 mt-6" />
       <ul className="pt-10 pb-24">
@@ -36,7 +36,9 @@ export const MenuPopup = ({ onClose }) => {
           );
         })}
       </ul>
-      <span className="text-xs text-white opacity-40 font-light">SOCIALS</span>
+      <span className="text-xs text-white opacity-40 font-light">
+        {t('menuPopUp.socials')}
+      </span>
       <ul className="flex space-x-7">
         <a
           href="https://www.instagram.com/khutzmexico"

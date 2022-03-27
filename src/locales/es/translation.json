@@ -48,6 +48,8 @@
     }
   },
   "menuPopUp": {
+    "navigation": "NAVEGACIÓN",
+    "socials": "REDES SOCIALES",
     "sections": {
       "home": "Inicio",
       "portfolio": "Portafolio",
