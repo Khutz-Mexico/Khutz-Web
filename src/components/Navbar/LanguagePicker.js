@@ -10,8 +10,6 @@ const LanguagePicker = () => {
     i18n.changeLanguage(newLanguage);
   };
 
-  // console.log(selectedLanguage, t('test'));
-
   return (
     <ul className="flex items-center space-x-4 select-none">
       {AVAILABLE_LANGUAGES.map((language) => (

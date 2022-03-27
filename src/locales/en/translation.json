@@ -82,5 +82,19 @@
         "text": "We help you structure your website correctly and optimize the search for your content in search engines."
       }
     ]
+  },
+  "contactScreen": {
+    "enterAValue": "Please enter a value for the field",
+    "requestReceived": "We received your message successfully and will reach out to you as soon as possible!"
+  },
+  "formFields": {
+    "contact": {
+      "name": "Name",
+      "email": "Email",
+      "companyName": "Company name",
+      "desiredService": "Service",
+      "budget": "Budget",
+      "message": "Message"
+    }
   }
 }

@@ -36,9 +36,6 @@ export const ProjectDetailsScreen = () => {
     );
   };
 
-  console.log('project', project);
-  console.log('img', img);
-
   return (
     <div>
       {/* banner */}

@@ -1,7 +1,49 @@
+import React, { useState, useEffect } from 'react';
+import swal from 'sweetalert';
+import { useTranslation } from 'react-i18next';
 import Footer from 'components/Footer';
-import React from 'react';
+import { createFormSubmission, getFormFields } from 'services/api/forms';
+import { validateFormSubmission } from 'utils/forms';
+
+const formCode = 'contact';
 
 export const ContactScreen = () => {
+  const { t } = useTranslation();
+  const [fields, setFields] = useState([]);
+  const [data, setData] = useState({});
+
+  const handleChangeValue = (key, value) => {
+    setData({ ...data, [key]: value });
+  };
+
+  const handleSubmit = () => {
+    const error = validateFormSubmission(fields, data, t);
+    if (error) {
+      return swal('Error', error, 'error');
+    }
+
+    createFormSubmission(formCode, data).finally(() => {
+      swal('Success', t('contactScreen.requestReceived'), 'success');
+    });
+  };
+
+  const translateFields = (_fields) => {
+    return _fields.map((field) => ({
+      ...field,
+      label: t(`formFields.${formCode}.${field.code}`),
+    }));
+  };
+
+  useEffect(() => {
+    getFormFields(formCode).then((response) => {
+      setFields(translateFields(response.data));
+    });
+  }, []);
+
+  useEffect(() => {
+    setFields(translateFields(fields));
+  }, [t]);
+
   return (
     <div>
       <div className="px-8 md:px-[180px] py-[110px]">
@@ -19,11 +61,12 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What´s your name?
+                    What's your name?
                   </h2>
                   <input
                     type="text"
                     placeholder="John Doe"
+                    onChange={(e) => handleChangeValue('name', e.target.value)}
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -33,11 +76,12 @@ export const ContactScreen = () => {
                 <hr className="bg-gray-600" />
                 <div className="py-[35px]">
                   <h2 className="text-[20px] font-medium text-[--var(primaryColor)]">
-                    What´s your email?
+                    What's your email?
                   </h2>
                   <input
                     type="email"
                     placeholder="info@khutz.com"
+                    onChange={(e) => handleChangeValue('email', e.target.value)}
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -52,6 +96,9 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Khutz México"
+                    onChange={(e) =>
+                      handleChangeValue('companyName', e.target.value)
+                    }
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -66,6 +113,9 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Web design"
+                    onChange={(e) =>
+                      handleChangeValue('desiredService', e.target.value)
+                    }
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -80,6 +130,9 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="$1,000 USD"
+                    onChange={(e) =>
+                      handleChangeValue('budget', e.target.value)
+                    }
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -94,6 +147,9 @@ export const ContactScreen = () => {
                   <input
                     type="text"
                     placeholder="Hello Khutz, can you help me with"
+                    onChange={(e) =>
+                      handleChangeValue('message', e.target.value)
+                    }
                     className="text-lg w-full font-light outline-none"
                   />
                 </div>
@@ -132,7 +188,10 @@ export const ContactScreen = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900 hover:bg-[#f64b29] w-60 h-60 rounded-full flex justify-center items-center cursor-pointer">
+            <div
+              className="bg-gray-900 hover:bg-[#f64b29] duration-300 w-60 h-60 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={handleSubmit}
+            >
               <span className="text-white">Send it</span>
             </div>
           </div>

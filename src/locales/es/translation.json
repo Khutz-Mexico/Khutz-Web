@@ -82,5 +82,19 @@
         "text": "Te ayudamos a estructurar correctamente tu sitio web y optimizar la búsqueda de tu contenido en los buscadores"
       }
     ]
+  },
+  "contactScreen": {
+    "enterAValue": "Por favor completa el campo",
+    "requestReceived": "Hemos recibido tu mensaje satisfactoriamente y vamos a contactarte lo más rápido posible!"
+  },
+  "formFields": {
+    "contact": {
+      "name": "Nombre",
+      "email": "Email",
+      "companyName": "Nombre de la empresa",
+      "desiredService": "Servicio",
+      "budget": "Presupuesto",
+      "message": "Mensaje"
+    }
   }
 }
