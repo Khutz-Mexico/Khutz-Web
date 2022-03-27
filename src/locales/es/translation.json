@@ -100,7 +100,7 @@
     "sendIt": "Envíalo",
     "fieldLabels": {
       "name": "¿Cuál es tu nombre?",
-      "email": "¿Qué servicio estás buscando?",
+      "email": "¿Cuál es tu correo?",
       "companyName": "Nombre de la empresa",
       "service": "¿Qué servicio estás buscando?",
       "budget": "¿Cuál es tu presupuesto?",
