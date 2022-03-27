@@ -24,13 +24,24 @@ export const ContactScreen = () => {
       return swal('Error', error, 'error');
     }
 
-    createFormSubmission(formCode, data).finally(() => {
-      swal('Success', t('contactScreen.requestReceived'), 'success').finally(
-        () => {
-          navigate('/');
-        },
-      );
-    });
+    createFormSubmission(formCode, data)
+      .then(() => {
+        swal(
+          t('contactScreen.requestReceived.title'),
+          t('contactScreen.requestReceived.message'),
+          'success',
+        );
+        navigate('/');
+      })
+      .catch((e) => {
+        if (e?.response?.data?.error?.code === 'invalidFormSubmission') {
+          swal(
+            t('contactScreen.invalidForm.title'),
+            t('contactScreen.invalidForm.message'),
+            'warning',
+          );
+        }
+      });
   };
 
   const translateFields = (_fields) => {

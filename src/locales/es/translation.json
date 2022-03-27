@@ -85,7 +85,14 @@
   },
   "contactScreen": {
     "enterAValue": "Por favor completa el campo",
-    "requestReceived": "Hemos recibido tu mensaje satisfactoriamente y vamos a contactarte lo más rápido posible!"
+    "requestReceived": {
+      "title": "Mensaje recibido",
+      "message": "Hemos recibido tu mensaje satisfactoriamente y vamos a contactarte lo más rápido posible!"
+    },
+    "invalidForm": {
+      "title": "Formulario inválido",
+      "message": "Hay errores en el formulario, por favor corrígelos y vuelve a intentarlo."
+    }
   },
   "formFields": {
     "contact": {

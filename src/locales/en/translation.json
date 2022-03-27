@@ -85,7 +85,14 @@
   },
   "contactScreen": {
     "enterAValue": "Please enter a value for the field",
-    "requestReceived": "We received your message successfully and will reach out to you as soon as possible!"
+    "requestReceived": {
+      "title": "Message received",
+      "message": "We received your message successfully and will reach out to you as soon as possible!"
+    },
+    "invalidForm": {
+      "title": "Invalid form",
+      "message": "There are errors in the form, please correct them and try again."
+    }
   },
   "formFields": {
     "contact": {
