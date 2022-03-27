@@ -114,10 +114,10 @@ export const projects = [
     img: '/assets/projects/calido.png',
     slogan: 'Un lugar cálido',
     description:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    resultTitle: 'Incremento de las ventas',
+      'Cálido Furniture and Deco es una empresa ubicada en Tulum, dedicada a la comercialización de muebles y textiles. Nuestra trabajo en Cálido Furniture and Deco consistió desde la creación del diseño UX/UI hasta el desarrollo web',
+    resultTitle: 'Diseño y desarrollo web',
     resultContent:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
+      'El sitio web de calido se construyo en Wordpress y un template base, con la finalidad de facilitar la gestión del contenido. Se crear las bases para en un futuro escalar el sitio a un ecommerce haciendo uso de Woocommerce y pasarelas de pago como paypal y stripe',
     imagesSmallSlider: [
       '/assets/clients/calido/calido-1.jpg',
       '/assets/clients/calido/calido-2.jpg',
@@ -138,26 +138,6 @@ export const projects = [
     services: 'Diseño y desarrollo web',
     location: 'Tulum Quintana Roo, México',
     url: 'calidomx.com',
-  },
-  {
-    title: 'Lexar',
-    subtitle: 'Website',
-    textColor: 'text-[#004E64]',
-    bgButton: 'bg-[#004E64]',
-    backgroundColor: 'bg-[#f2f2f2]',
-    query: 'lexarconsultores',
-    img: '/assets/projects/lexar.png',
-    slogan: 'This is a slogan',
-    description:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    resultTitle: 'Dirección y ejecución',
-    resultContent:
-      'Como diseñadores y desarrolladores web, estamos aquí para hacer que tu marca o negocio se destaque en el mundo digital. Nuestra pasión por el diseño y nuestras habilidades para codificar, combinadas con tu visión garantizará un gran resultado final.',
-    imagesSmallSlider: [1, 2, 3, 4, 5, 6, 7],
-    imagesBigSlider: [''],
-    services: 'Desarrollo web y branding',
-    location: 'Puebla, México',
-    url: 'lexarconsultores.com',
   },
   {
     title: 'Bellepool',
