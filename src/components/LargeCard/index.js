@@ -1,4 +1,5 @@
 import { ChevronRightIcon } from '@heroicons/react/solid';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 export const LargeCard = ({
@@ -9,6 +10,8 @@ export const LargeCard = ({
   img,
   query,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <Link to={`/projects/${query}`}>
       <div
@@ -17,7 +20,7 @@ export const LargeCard = ({
         {/* header */}
         <div>
           <span className="uppercase tracking-[4px] text-xs">
-            Caso de estudio
+            {t('portfolio.caseStudy')}
           </span>
         </div>
         {/* image */}
@@ -35,7 +38,7 @@ export const LargeCard = ({
         </div>
         {/* footer */}
         <div className="flex items-center space-x-2 justify-end">
-          <span>Ver más</span>
+          <span>{t('portfolio.seeMore')}</span>
           <ChevronRightIcon className="h-6" />
         </div>
       </div>

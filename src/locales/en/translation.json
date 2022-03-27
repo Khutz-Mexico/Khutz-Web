@@ -47,6 +47,10 @@
       "viewAll": "View all"
     }
   },
+  "portfolio": {
+    "caseStudy": "Case study",
+    "seeMore": "See more"
+  },
   "menuPopUp": {
     "navigation": "NAVIGATION",
     "socials": "SOCIALS",
