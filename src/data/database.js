@@ -82,7 +82,7 @@ export const projects = [
       'Aura Real Estate es una agencia inmobiliaria que promueve propiedades en las mejores playas de México. Cuando fuimos contratados el objetivo era claro, su sitio web debia ser sencillo, pero que transmitiera seguridad y elegancia en cada rincón, además de poder ser gestionado el contenido de manera fácil y rápida.',
     resultTitle: 'Un buen diseño',
     resultContent:
-      'Nuestro trabajo en este proyecto abarco desde branding, hasta el desarrollo del sitio web. El sitio web para Aura fue desarrollado en el CMS open source Wordpress y un template de base, el trabajo sin duda fue laborioso ya que tuvimos que vaciar mucha información, editar fotos y crear el copywrite.',
+      'Nuestro trabajo en este proyecto abarco desde el branding, hasta el desarrollo del sitio web. El sitio web para Aura fue desarrollado en el CMS open source Wordpress y un template de base. El objetivo principal del desarrollo era crear un sitio web que fuera fácil de utilizar e intuitivo donde pudiera verse de manera detallada y concisa la información de cada una de las propiedades, manteniendo un diseño moderno y elegante.',
     imagesSmallSlider: [
       '/assets/clients/aura/aura-6.jpg',
       '/assets/clients/aura/aura-7.jpg',
