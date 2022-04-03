@@ -65,7 +65,7 @@ export const ContactScreen = () => {
     <div>
       <div className="px-8 md:px-[180px] py-[110px]">
         {/* Title */}
-        <h1 className="text-5xl md:text-[65px] font-semibold whitespace-pre-line leading-tight">
+        <h1 className="text-4xl md:text-[65px] font-semibold whitespace-pre-line leading-tight">
           {t('contactScreen.letsGetStarted')}
         </h1>
 
