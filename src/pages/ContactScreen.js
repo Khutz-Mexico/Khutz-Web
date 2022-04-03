@@ -190,7 +190,7 @@ export const ContactScreen = () => {
                 <h3 className="uppercase tracking-[4px] text-xs opacity-60 text-gray-600">
                   {t('contactScreen.businessDetails')}
                 </h3>
-                <p className="text-[16px] font-medium">CP. 72960</p>
+                <p className="text-[16px] font-medium">CP. 72000</p>
                 <p className="text-[16px] font-medium">City: Puebla</p>
                 <p className="text-[16px] font-medium">Country: México</p>
               </div>

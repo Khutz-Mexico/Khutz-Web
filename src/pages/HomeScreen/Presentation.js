@@ -9,7 +9,7 @@ const Presentation = () => {
   return (
     <div className="screen-height flex flex-col items-center pt-[100px] md:pt-[120px]">
       <div className="flex flex-col text-4xl md:text-[70px] md:leading-[85px]">
-        <p className="font-semibold text-center">
+        <p id="return" className="font-semibold text-center">
           {t('home.presentation.title.weHelp')}
         </p>
         <p className="font-semibold text-center">
