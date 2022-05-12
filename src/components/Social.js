@@ -15,7 +15,7 @@ const Social = () => {
         <a href="#" target="_blank" rel="noreferrer">
           <BsBehance className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
         </a>
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Khutz" target="_blank" rel="noreferrer">
           <BsGithub className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
         </a>
       </div>
