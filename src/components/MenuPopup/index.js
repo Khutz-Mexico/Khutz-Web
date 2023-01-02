@@ -53,7 +53,7 @@ export const MenuPopup = ({ onClose }) => {
         </a>
         {/* TODO add Dribbble link */}
         <a href="https://dribbble.com" target="_blank" rel="noreferrer">
-          <li className="text-white">Dribbble</li>
+          <li className="text-white">Github</li>
         </a>
       </ul>
     </nav>
