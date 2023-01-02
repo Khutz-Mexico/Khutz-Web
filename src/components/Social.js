@@ -1,5 +1,6 @@
 import React from 'react';
-import { BsBehance, BsGithub, BsInstagram } from 'react-icons/bs';
+import { BsGithub, BsInstagram } from 'react-icons/bs';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 const Social = () => {
   return (
@@ -12,11 +13,11 @@ const Social = () => {
         >
           <BsInstagram className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
         </a>
-        <a href="#" target="_blank" rel="noreferrer">
-          <BsBehance className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
-        </a>
         <a href="https://github.com/Khutz" target="_blank" rel="noreferrer">
           <BsGithub className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
+        </a>
+        <a href="#" target="_blank" rel="noreferrer">
+          <FaLinkedinIn className="h-7 fill-[#909090] hover:fill-[var(--primaryColor)]" />
         </a>
       </div>
     </div>
